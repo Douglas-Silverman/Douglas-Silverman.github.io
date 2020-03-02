@@ -1,0 +1,10 @@
+#profile-picture {
+    background-position: center;
+    position: relative;
+    height: 450px;
+    width: 450px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 25px;
+    margin-top: 45px;
+}
