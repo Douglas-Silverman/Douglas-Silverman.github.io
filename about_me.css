@@ -1,10 +1,9 @@
 #profile-picture {
     background-position: center;
     position: relative;
-    height: 450px;
-    width: 450px;
+    height: 400px;
+    width: 400px;
     background-repeat: no-repeat;
-    background-size: cover;
     margin-left: 25px;
     margin-top: 25px;
 }
@@ -17,7 +16,7 @@
 
 .about-me table{
     width: 80%;
-    height: 400px;
+    height: 450px;
 }
 
 .about-me td{
