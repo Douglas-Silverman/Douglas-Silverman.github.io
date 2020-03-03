@@ -1,12 +1,12 @@
 #profile-picture {
     background-position: center;
     position: relative;
-    height: 450px;
-    width: 450px;
+    height: 100%;
+    width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
     margin-left: 25px;
-    margin-top: 45px;
+    margin-top: 25px;
 }
 
 .about-me {
@@ -22,11 +22,15 @@
 
 .about-me td{
     width: 45%;
-    border:1px solid black;
     margin: 15px;
+    border: 1px solid black;
 }
 
 .about-me p{
     margin: 10px;
     padding: 5px;
+}
+
+.about-me #profile-row td{
+    width: 30%;
 }
