@@ -1,5 +1,8 @@
 .body{
-    background-image: url(/pictures/home_background.jpeg);
+    background-image: url("pictures/home_background.jpg");
+    background-repeat: no-repeat;
+	background-size: cover;
+	margin: auto;
 }
 
 .greeter{
