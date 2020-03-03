@@ -1,42 +1,75 @@
 <!DOCTYPE html>
-<html>
+<html lang= "en">
     <head>
+        <link href= "bars.css" rel= "stylesheet">
         <link href= "about_me.css" rel= "stylesheet">
     </head>
     <body>
-        <div class= "top-bar">
-            <table>
+        <div class= "toolbar">
+            <ul class= "bar">
+                <li>
+                    <a href= "https://Douglas-Silverman.github.io">Home</a>
+                </li>
+                <li>
+                    <a href= "about_me.html" id= "active-page">About Me</a>
+                </li>
+                <li>
+                    <a href= "photos.html">Photos</a>
+                </li>
+                <li>
+                    <a href= "projects.html">Projects</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class= about-me>
+            <table align = "center">
+                <tr>
+                    <th></th>
+                    <th>
+                        <h1>Douglas Silverman</h1>
+                    </th>
+                </tr>
+                <tr>
+                    <td rowspan= "2">
+                        <img src= "/pictures/profilePic.png" id = "profile-picture" alt= "profile picture">
+                    </td>
+                    <td>
+                        <p>
+                            Hello my Name is Douglas Silverman. I am a Senior studying Computer Science and Mathematics 
+                            at the University of Massachusetts, Amherst.
+                        </p>
+                    </td>
+                </tr>
                 <tr>
                     <td>
-                        <a href= "https://Douglas-Silverman.github.io">Home</a>
-                    </td>
-                    <td>
-                        <a href= "about_me.html">About Me</a>
-                    </td>
-                    <td>
-                        <a href= "photos.html">Photos</a>
-                    </td>
-                    <td>
-                        <a href= "projects.html">Projects</a>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi placeat, voluptates molestiae repellendus eligendi deserunt adipisci odit at exercitationem dolor obcaecati neque minima iusto, cupiditate consectetur harum animi quos assumenda? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem nam odit et ad quod ullam ratione optio iusto consequatur mollitia, qui sunt in perferendis dolorum natus nostrum, doloremque unde numquam.
+                        </p>
                     </td>
                 </tr>
             </table>
         </div>
 
-        <div class= about-me>
-            <table>
-                <tr>
-                    <h1>Douglas Silverman</h1>
-                </tr>
-                <tr>
-                    <img src= "/pictures/profilePic.png" id = "profile-picture">
-                </tr>
-                <tr>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum a vel facere eligendi quas distinctio nisi magni beatae perferendis placeat! Atque tempore id delectus consectetur adipisci facilis fugit ipsa aperiam. 
-                    </p>
-                </tr>
-            </table>
+
+
+
+
+        <div class= "bottom-bar">
+            <ul class>
+                <li>
+                    <a href= "/links/Resume 3.0 edit">Resume</a>
+                </li>
+                <li>
+                    <a href= "https://www.linkedIn.com/in/Douglas-Silverman" target= "_blank">linkedIn.com/in/Douglas-Silverman</a>
+                </li>
+                <li>
+                    <a>dpsilverman@umass.edu</a>
+                </li>
+                <li>
+                    <a>(999)-999-9999</a>
+                </li>
+            </ul>
         </div>
     </body>
 </html>

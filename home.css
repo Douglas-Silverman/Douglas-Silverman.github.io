@@ -1,0 +1,15 @@
+.greeter{
+    margin: 15px;
+    width: 750px;
+    color: #e6e6e6;
+}
+
+.greeter h1{
+    letter-spacing: 1px;
+    padding: 5px;
+    text-emphasis: emphasis;
+    text-align: left;
+    margin-bottom: 50px;
+    font-size: 28pt;
+    text-shadow: 1px 1px #8c8c8c;
+}

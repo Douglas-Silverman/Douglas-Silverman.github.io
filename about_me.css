@@ -8,3 +8,25 @@
     margin-left: 25px;
     margin-top: 45px;
 }
+
+.about-me {
+    color: #e6e6e6;
+    margin: 15px;
+    align-items: center;
+}
+
+.about-me table{
+    width: 80%;
+    height: 400px;
+}
+
+.about-me td{
+    width: 45%;
+    border:1px solid black;
+    margin: 15px;
+}
+
+.about-me p{
+    margin: 10px;
+    padding: 5px;
+}
