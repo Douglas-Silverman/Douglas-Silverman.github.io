@@ -13,3 +13,13 @@ function getWidth() {
   }
 
 console.log(getWidth());
+
+
+
+                          if(Person.clickedOn("Douglas-Silverman.github.io")){
+                              print("Welcome to My Webpage");
+
+                               display("Image_Of_Cat.jpeg")
+
+                              // Reminder to add Cat Image so Website looks cool
+                          }

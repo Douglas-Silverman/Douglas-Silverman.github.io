@@ -1,6 +1,10 @@
+.body{
+    background-image: url(/pictures/home_background.jpeg);
+}
+
 .greeter{
     margin: 15px;
-    width: 750px;
+    width: 80%;
     color: #e6e6e6;
 }
 
