@@ -1,0 +1,36 @@
+body{
+    background-color: #4f4f4f;
+}
+
+h1{
+    font-size: 28pt;
+    margin-top: 0;
+}
+#ultimate-image{
+    width: 432px;
+    height: 275px;
+}
+
+#strategy-image{
+    width: 500px;
+    height: 157px;
+}
+
+.interests td{
+    text-align: center;
+}
+
+.interests table{
+    margin: 15px;
+    width: 60%;
+}
+
+.text-paragraph td p{
+    margin-bottom: 50px;
+    text-align: justify;
+}
+
+.interests h2{
+    margin-bottom: 0;
+    font-size: 24pt;
+}

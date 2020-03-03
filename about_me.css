@@ -2,6 +2,9 @@ body{
     background-color: #4f4f4f;
 }
 
+h1{
+    font-size: 28pt;
+}
 
 #profile-picture {
     background-position: center;
@@ -15,17 +18,16 @@ body{
 .about-me {
     color: #e6e6e6;
     margin: 15px;
-    align-items: center;
+    text-align: left;
 }
 
 .about-me table{
     width: 80%;
-    height: 450px;
 }
 
 .about-me td{
     width: 45%;
-    margin: 15px;
+    margin: 15p;
 }
 
 .about-me p{
@@ -35,4 +37,16 @@ body{
 
 .about-me #profile-row td{
     width: 35%;
+}
+
+.about-me h2{
+    text-align: center;
+}
+
+.justified {
+    text-align: justify;
+}
+
+.centered{
+    text-align: center;
 }
