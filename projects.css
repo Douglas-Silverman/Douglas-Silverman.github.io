@@ -7,7 +7,7 @@ h1 {
     font-size: 32pt;    
 }
 
-ul{
+.projects-content ul{
     list-style-type: none;
     text-decoration: underline;
     font-size: 14pt; 
