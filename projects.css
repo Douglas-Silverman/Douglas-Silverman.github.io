@@ -7,3 +7,9 @@ h1 {
     font-size: 32pt;    
 }
 
+ul{
+    list-style-type: none;
+    text-decoration: underline;
+    font-size: 14pt; 
+}
+
