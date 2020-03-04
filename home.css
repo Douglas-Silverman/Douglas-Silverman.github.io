@@ -1,22 +1,42 @@
-.body{
-    background-image: url("pictures/home_background.jpg");
-    background-repeat: no-repeat;
-	background-size: cover;
-	margin: auto;
-}
-
-.greeter{
-    margin: 15px;
-    width: 80%;
+body{
+    background-color: #4f4f4f;
     color: #e6e6e6;
 }
 
+#icon {
+    width: 150px;
+    height: 150px;
+}
+.greeter table{
+    width: 100%;
+}
+
+.greeter td{
+    width: 33%;
+    text-align: center;
+}
+#img{
+    text-align: right;
+}
 .greeter h1{
     letter-spacing: 1px;
-    padding: 5px;
-    text-emphasis: emphasis;
-    text-align: left;
+    text-align: center;
+    margin-top: 25px;
     margin-bottom: 50px;
-    font-size: 28pt;
+    font-size: 40pt;
+    padding: 0px;
     text-shadow: 1px 1px #8c8c8c;
+}
+
+.greeter strong{
+    display: block;
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 14pt;
+
+}
+
+#code-snippet{
+    width: 274px;
+    height:106px;
 }
