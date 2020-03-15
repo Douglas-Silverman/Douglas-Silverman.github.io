@@ -4,6 +4,8 @@ body{
     font-size: 18pt;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: normal;
+    width: 100%;
+    height: 100%;
 }
 
 th{

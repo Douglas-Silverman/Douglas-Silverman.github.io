@@ -25,3 +25,4 @@ function imageTransition(id) {
     img.setAttribute("data-alt", src);
     }, 200);
 }
+

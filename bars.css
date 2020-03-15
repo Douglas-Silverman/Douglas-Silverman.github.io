@@ -39,11 +39,6 @@ body{
     transition-duration: 0.4s;
 }
 
-
-.bottom-bar {
-    margin-top: 75px;
-}
-
 #active-page{
     background-color: teal;
 }
@@ -54,6 +49,14 @@ body{
 }
 
 
+
+.bottom-bar {
+    margin-top: 75px;
+    background-color: #333;
+    position: absolute;
+    vertical-align: baseline;
+    width: 100%;
+}
 
 .bottom-bar ul{
     padding-top: 25px;
