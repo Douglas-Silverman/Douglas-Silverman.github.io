@@ -1,5 +1,5 @@
-function mona_gif_function(){
-    let img = document.getElementById("mona-lisa-gif");
+function runGif(id){
+    let img = document.getElementById(id);
     let src = img.getAttribute("src");
     let data_alt = img.getAttribute("data-alt");
 

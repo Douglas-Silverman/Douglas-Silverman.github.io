@@ -1,48 +1,42 @@
 body{
+    width: 100%;
     background-color: #4f4f4f;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #e6e6e6;
+    font-size: 18pt;
 }
 
-h1{
+h1 {
+    font-size: 40pt;    
+    font-weight: normal;
+    background-image: linear-gradient(teal, rgb(0, 179, 179));
     margin: 0px;
-    font-size: 32pt;
+    margin-bottom: 55px;
+    padding-bottom: 15px;
 }
 
 #profile-picture {
-    background-position: center;
+    margin-left: 10%;
     height: 375px;
     width: 375px;
-    background-repeat: no-repeat;
-    margin-left: 15px;
-    margin-top: 15px;
+    vertical-align: top;
 }
 
-.about-me {
-    color: #e6e6e6;
-    margin: 15px;
-    text-align: left;
+tr {
+    margin-top: 25px;
 }
 
-.about-me table{
-    width: 80%;
-}
-
-.about-me td{
-    width: 45%;
-}
-
-.about-me p{
+p{
+    margin: 0px;
+    margin-left: 50px;
     padding: 5px;
-    font-size: 14pt;
+    margin-right: 10%;
 }
 
-.about-me #profile-row td{
-    width: 35%;
-}
-
-.about-me h2{
+h2{
     text-align: center;
     background-image: linear-gradient(#333, #444);
+    font-weight: normal;
 }
 
 .centered{

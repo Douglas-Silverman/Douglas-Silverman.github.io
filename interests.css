@@ -4,10 +4,13 @@ body{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-h1{
-    font-size: 40pt;
+h1 {
+    font-size: 40pt;    
     font-weight: normal;
-    margin-top: 0;
+    background-image: linear-gradient(teal, rgb(0, 179, 179));
+    margin: 0px;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
 }
 
 #ultimate-image{

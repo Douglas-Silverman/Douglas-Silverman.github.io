@@ -6,11 +6,27 @@ body{
     font-weight: normal;
 }
 
+th{
+    text-align: center;
+}
 h1 {
     font-size: 40pt;    
     font-weight: normal;
+    background-image: linear-gradient(teal, rgb(0,170,170));
+    margin: 0px;
+    padding-bottom: 15px;
+    margin-bottom: 40px;
 }
 
+td{
+    padding: 0px;
+}
+
+table{
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+}
 .project-header{
     background-image: linear-gradient(#333, #444);
 }
@@ -20,6 +36,7 @@ h2{
     padding-left: 10%;
     font-size: 28pt;
     font-weight: normal;
+    margin: 5px;
 }
 
 table{
@@ -54,14 +71,19 @@ p {
 }
 
 #mona-lisa-gif {
+    margin-bottom: 30px;
     width: 345px;
     height: 400px;
+}
+
+#spacer {
+    display: inline-block;
+    width: 50px;
 }
 
 #xochimilco-gif {
     width: 507px;
     height: 268px;
-    margin-left: 50px;
     align-self: auto;
     vertical-align: top;
 }

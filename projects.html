@@ -4,6 +4,7 @@
         <link href= "bars.css" rel= "stylesheet">
         <link href= "projects.css" rel= "stylesheet">
 
+
         <link rel="apple-touch-icon" sizes="57x57" href="/pictures/favicon/apple-icon-57x57.png">
         <link rel="apple-touch-icon" sizes="60x60" href="/pictures/favicon/apple-icon-60x60.png">
         <link rel="apple-touch-icon" sizes="72x72" href="/pictures/favicon/apple-icon-72x72.png">
@@ -22,8 +23,7 @@
         <meta name="msapplication-TileImage" content="/pictures/favicon/ms-icon-144x144.png">
         <meta name="theme-color" content="#ffffff">
 
- 
-        <script href= "gifs.js"></script>
+        <script src= "gifs.js"></script>
     </head>
     <body>
         <div class= "toolbar">
@@ -42,12 +42,39 @@
                 </li>
             </ul>
         </div>
+        
 
+        
 
-        <div class= "projects-content">
-            <h1>Projects</h1>
+        <div align= "center">
             <table align= "center">
+                <tr>
+                    <th>
+                        <h1>Here are some of my Projects!</h1>
+                    </th>
+                </tr>
+
                 <tr class = "project-header">
+                    <td>
+                        <h2>Image Mosaic | CS 373</h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>
+                            This is one of my favorite projects from CS 373 Computer Graphics. The goal of this project is to take an input image, 
+                            and transform it into an image mosaic using a given set of images. 
+                        </p>
+
+                        <div id = "mosaic-images">
+                            <img src= "pictures/Mona_Lisa_Still.png" alt= "Mona Lisa Mosaic Gif" id= "mona-lisa-gif" data-alt= "pictures/mona-lisa-mosaic.gif" onclick= "runGif('mona-lisa-gif')">
+                            <div id= "spacer"></div>
+                            <img src= "pictures/xochimilco-still.png" alt= "Colorful Boat Mosaic Gif" id= "xochimilco-gif" data-alt= "pictures/xochimilco.gif" onclick= "runGif('xochimilco-gif')">
+                        </div>
+                    </td>
+                </tr>
+
+                 <tr class = "project-header">
                     <td>
                         <h2>Web Programming Project | CS 326</h2>
                     </td>
@@ -55,7 +82,6 @@
                 <tr>
                     <td>
                         <p>
-
                             For my CS 326 Final Project, I will be working with 3 other students to create an interactive website. 
                             The frontend will be made utilizing the React.js framework, and be styled using Bootstrap, 
                             while AWS and node.js will be used to run the backend and applications.
@@ -71,7 +97,7 @@
                         <h2>Math Modeling Project | Math 456</h2>
                     </td>
                 </tr>
-                <tr class= "text-paragraph">
+                <tr>
                     <td>
                         <p>
                             The goal of this project is to analyze a large dataset of Counter-String: Global Offensive competitve esports 
@@ -82,32 +108,11 @@
                     </td>
                 </tr>
 
-                <tr class = "project-header">
-                    <td>
-                        <h2>Image Mosaic | CS 373</h2>
-                    </td>
-                </tr n>
-                <tr class= "text-paragraph">
-                    <td>
-                        <p>
-                            This is one of my favorite projects from CS 373 Computer Graphics. The goal of this project is to take an input image, 
-                            and transform it into an image mosaic using a given set of images. 
-                        </p>
-
-                    <div id = "mosaic-images">
-                        <button onclick= "mona_gif_function()">Play</button>
-                        <figure>
-                            <img src= "pictures/mona-lisa-still.png" alt= "Mona Lisa Mosaic Gif" id= "mona-lisa-gif" data-alt= "pictures/mona-lisa-mosaic.gif">
-                        </figure>
-                        <figure>
-                            <img src= "pictures/xochimilco-still.png" alt= "Colorful Boat Mosaic Gif" id= "xochimilco-gif" data-alt= "pictures/xochimilco.gif">
-                        </figure>
-                    </div>
-
-                </td>
-
             </table>
         </div>
+
+
+
 
         <div class= "bottom-bar">
             <ul class>
@@ -121,7 +126,7 @@
                     <a href= "https://github.com/Douglas-Silverman/" target= "_blank">github.com/Douglas-Silverman</a>
                 </li>
                 <li id = "linkedIn">
-                    <a href= "https://www.linkedIn.com/in/Douglas-Silverman" target= "_blank">linkedin.com/in/Douglas-Silverman</a>
+                    <a href= "https://www.linkedIn.com/in/Douglas-Silverman" target= "_blank">linkedIn.com/in/Douglas-Silverman</a>
                 </li>
             </ul>
         </div>
