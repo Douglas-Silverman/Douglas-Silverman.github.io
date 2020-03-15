@@ -21,6 +21,9 @@
         <meta name="msapplication-TileColor" content="#ffffff">
         <meta name="msapplication-TileImage" content="/pictures/favicon/ms-icon-144x144.png">
         <meta name="theme-color" content="#ffffff">
+
+ 
+        <script href= "gifs.js"></script>
     </head>
     <body>
         <div class= "toolbar">
@@ -43,11 +46,67 @@
 
         <div class= "projects-content">
             <h1>Projects</h1>
-            <ul>
-                <li>Math Modeling Project</li>
-                <li>Web Programming Senior Project</li>
-            </ul>
-            <h2>Expect Updates around May 2020</h2>
+            <table align= "center">
+                <tr class = "project-header">
+                    <td>
+                        <h2>Web Programming Project | CS 326</h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>
+
+                            For my CS 326 Final Project, I will be working with 3 other students to create an interactive website. 
+                            The frontend will be made utilizing the React.js framework, and be styled using Bootstrap, 
+                            while AWS and node.js will be used to run the backend and applications.
+                        </p>
+
+                        <img src= "pictures/326 logos.png" alt= "technology used logos" class= "project-picture">
+    
+                    </td>
+                </tr>
+
+                <tr class = "project-header">
+                    <td>
+                        <h2>Math Modeling Project | Math 456</h2>
+                    </td>
+                </tr>
+                <tr class= "text-paragraph">
+                    <td>
+                        <p>
+                            The goal of this project is to analyze a large dataset of Counter-String: Global Offensive competitve esports 
+                            and to create a model for predicting the winner of a given match. The data-set is open source and was found on kaggle.com. 
+                            The model will be written in python3 and utilize sklearn. 
+                        </p>
+                        <img src= "pictures/math 456.png" alt= "CS:GO Banner" id= "csgo-image" class= "project-picture">
+                    </td>
+                </tr>
+
+                <tr class = "project-header">
+                    <td>
+                        <h2>Image Mosaic | CS 373</h2>
+                    </td>
+                </tr n>
+                <tr class= "text-paragraph">
+                    <td>
+                        <p>
+                            This is one of my favorite projects from CS 373 Computer Graphics. The goal of this project is to take an input image, 
+                            and transform it into an image mosaic using a given set of images. 
+                        </p>
+
+                    <div id = "mosaic-images">
+                        <button onclick= "mona_gif_function()">Play</button>
+                        <figure>
+                            <img src= "pictures/mona-lisa-still.png" alt= "Mona Lisa Mosaic Gif" id= "mona-lisa-gif" data-alt= "pictures/mona-lisa-mosaic.gif">
+                        </figure>
+                        <figure>
+                            <img src= "pictures/xochimilco-still.png" alt= "Colorful Boat Mosaic Gif" id= "xochimilco-gif" data-alt= "pictures/xochimilco.gif">
+                        </figure>
+                    </div>
+
+                </td>
+
+            </table>
         </div>
 
         <div class= "bottom-bar">
@@ -56,13 +115,13 @@
                     <a>dpsilverman@umass.edu</a>
                 </li>
                 <li>
-                    <a href= "/links/ResumeForGithubPage.pdf" target= "_blank">Resume</a>
+                    <a href= "/links/Douglas-Silverman_Resume.pdf" target= "_blank">Resume</a>
                 </li>
                 <li>
                     <a href= "https://github.com/Douglas-Silverman/" target= "_blank">github.com/Douglas-Silverman</a>
                 </li>
                 <li id = "linkedIn">
-                    <a href= "https://www.linkedIn.com/in/Douglas-Silverman" target= "_blank">linkedIn.com/in/Douglas-Silverman</a>
+                    <a href= "https://www.linkedIn.com/in/Douglas-Silverman" target= "_blank">linkedin.com/in/Douglas-Silverman</a>
                 </li>
             </ul>
         </div>

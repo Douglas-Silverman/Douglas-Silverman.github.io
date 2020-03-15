@@ -1,15 +1,67 @@
 body{
     background-color: #4f4f4f;
     text-align: center;
+    font-size: 18pt;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: normal;
 }
 
 h1 {
-    font-size: 32pt;    
+    font-size: 40pt;    
+    font-weight: normal;
 }
 
-.projects-content ul{
-    list-style-type: none;
-    text-decoration: underline;
-    font-size: 14pt; 
+.project-header{
+    background-image: linear-gradient(#333, #444);
 }
 
+h2{
+    padding-bottom: 40px;
+    padding-left: 10%;
+    font-size: 28pt;
+    font-weight: normal;
+}
+
+table{
+    width: 100%;
+    text-align: left;
+}
+
+.project-picture{
+    padding-left: 10%;
+    margin-bottom: 50px;
+}
+
+p {
+    margin-left: 10%;
+    margin-bottom: 40px;
+    padding-left: 15px;
+}
+
+#csgo-image {
+    margin-left: 10%;
+    padding-left: 15px;
+}
+
+#mosaic-images{
+    margin-left: 10%;
+    margin-bottom: 50px;
+}
+#mona-lisa {
+    width: 345px;
+    height: 400px;
+    margin-left: 10%;
+}
+
+#mona-lisa-gif {
+    width: 345px;
+    height: 400px;
+}
+
+#xochimilco-gif {
+    width: 507px;
+    height: 268px;
+    margin-left: 50px;
+    align-self: auto;
+    vertical-align: top;
+}

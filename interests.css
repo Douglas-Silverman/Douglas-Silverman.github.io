@@ -1,35 +1,48 @@
 body{
     background-color: #4f4f4f;
+    font-size: 18pt;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 h1{
-    font-size: 28pt;
+    font-size: 40pt;
+    font-weight: normal;
     margin-top: 0;
 }
+
 #ultimate-image{
     width: 432px;
     height: 275px;
+    margin-top: 10px;
 }
 
 #strategy-image{
+    margin-top: 10px;
     width: 500px;
     height: 157px;
 }
 
-.interests td{
+td{
     text-align: center;
 }
 
-.interests table{
-    margin: 15px;
-    width: 60%;
+table{
+    width: 100%;
 }
 
-.text-paragraph td p{
-    margin-bottom: 50px;
+p{
+    margin-top: 10px;
+    margin-left: 10%;
+    width: 80%;
+    padding: 0;
     text-align: justify;
+    font-size: 18pt;
 }
 
-.interests h2{
-    margin-bottom: 0;
+h2{
+    font-size: 28pt;
+    font-weight: normal;
+    padding-bottom: 25px;
+    margin-bottom: 10px;
+    background-image: linear-gradient(#333, #444);
 }
