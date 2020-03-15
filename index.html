@@ -23,6 +23,7 @@
         <meta name="msapplication-TileImage" content="/pictures/favicon/ms-icon-144x144.png">
         <meta name="theme-color" content="#ffffff">
 
+        <script src= "scripts.js"></script>
     </head>
     <body>
         <div class= "toolbar">
@@ -63,21 +64,20 @@
         </div>
 
 
-        <div class= "bottom-bar">
-            <ul class>
-                <li id = "email">
-                    <a>dpsilverman@umass.edu</a>
+        <div class= "bottom-bar" align= "center">
+            <ul>
+                <li id= "github-li">
+                    <div id= "github-logo" data-alt= "pictures/github logo-hover.png" onclick="openGithub()" align= "right"></div>
                 </li>
-                <li>
-                    <a href= "/links/Douglas-Silverman_Resume.pdf" target= "_blank">Resume</a>
-                </li>
-                <li>
-                    <a href= "https://github.com/Douglas-Silverman/" target= "_blank">github.com/Douglas-Silverman</a>
-                </li>
-                <li id = "linkedIn">
-                    <a href= "https://www.linkedIn.com/in/Douglas-Silverman" target= "_blank">linkedIn.com/in/Douglas-Silverman</a>
+                <li id= "linkedIn-li"> 
+                    <div id= "linkedIn-logo" data-alt= "pictures/linkedIn logo-hover.png" onclick="openLinkedIn()"></div>
                 </li>
             </ul>
+            
+            <div id= "text-links">
+                <a>dpsilverman@umass.edu</a>
+                <a href= "/links/Douglas-Silverman_Resume.pdf" target= "_blank">Resume</a>
+            </div>
         </div>
     </body>
 </html> 

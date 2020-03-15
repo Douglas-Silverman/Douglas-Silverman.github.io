@@ -9,10 +9,15 @@ body{
 h1 {
     font-size: 40pt;    
     font-weight: normal;
-    background-image: linear-gradient(teal, rgb(0, 179, 179));
+    background-image: linear-gradient(teal, rgb(0, 170, 170));
     margin: 0px;
     margin-bottom: 55px;
     padding-bottom: 15px;
+}
+
+th {
+    width: 100%;
+    padding: 0;
 }
 
 #profile-picture {
@@ -39,10 +44,10 @@ h2{
     font-weight: normal;
 }
 
-.centered{
-    text-align: center;
+td{
+    padding:0px;
 }
 
-#last-item{
-    margin-bottom: 50px;
+.centered{
+    text-align: center;
 }

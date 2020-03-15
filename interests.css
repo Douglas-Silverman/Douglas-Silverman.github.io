@@ -7,12 +7,17 @@ body{
 h1 {
     font-size: 40pt;    
     font-weight: normal;
-    background-image: linear-gradient(teal, rgb(0, 179, 179));
+    background-image: linear-gradient(teal, rgb(0, 170, 170));
     margin: 0px;
     padding-bottom: 15px;
     margin-bottom: 15px;
+    width: 100%;
 }
 
+th{
+    width: 100%;
+    padding: 0px;
+}
 #ultimate-image{
     width: 432px;
     height: 275px;
@@ -27,6 +32,7 @@ h1 {
 
 td{
     text-align: center;
+    padding: 0px;
 }
 
 table{

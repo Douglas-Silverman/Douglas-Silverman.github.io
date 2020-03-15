@@ -23,7 +23,7 @@
         <meta name="msapplication-TileImage" content="/pictures/favicon/ms-icon-144x144.png">
         <meta name="theme-color" content="#ffffff">
 
-        <script src= "gifs.js"></script>
+        <script src= "scripts.js"></script>
     </head>
     <body>
         <div class= "toolbar">
@@ -67,9 +67,9 @@
                         </p>
 
                         <div id = "mosaic-images">
-                            <img src= "pictures/Mona_Lisa_Still.png" alt= "Mona Lisa Mosaic Gif" id= "mona-lisa-gif" data-alt= "pictures/mona-lisa-mosaic.gif" onclick= "runGif('mona-lisa-gif')">
+                            <img src= "pictures/Mona_Lisa_Still.png" alt= "Mona Lisa Mosaic Gif" id= "mona-lisa-gif" data-alt= "pictures/mona-lisa-mosaic.gif" onclick= "imageTransition('mona-lisa-gif')">
                             <div id= "spacer"></div>
-                            <img src= "pictures/xochimilco-still.png" alt= "Colorful Boat Mosaic Gif" id= "xochimilco-gif" data-alt= "pictures/xochimilco.gif" onclick= "runGif('xochimilco-gif')">
+                            <img src= "pictures/xochimilco-still.png" alt= "Colorful Boat Mosaic Gif" id= "xochimilco-gif" data-alt= "pictures/xochimilco.gif" onclick= "imageTransition('xochimilco-gif')">
                         </div>
                     </td>
                 </tr>
@@ -114,21 +114,20 @@
 
 
 
-        <div class= "bottom-bar">
-            <ul class>
-                <li id = "email">
-                    <a>dpsilverman@umass.edu</a>
+        <div class= "bottom-bar" align= "center">
+            <ul>
+                <li id= "github-li">
+                    <div id= "github-logo" data-alt= "pictures/github logo-hover.png" onclick="openGithub()" align= "right"></div>
                 </li>
-                <li>
-                    <a href= "/links/Douglas-Silverman_Resume.pdf" target= "_blank">Resume</a>
-                </li>
-                <li>
-                    <a href= "https://github.com/Douglas-Silverman/" target= "_blank">github.com/Douglas-Silverman</a>
-                </li>
-                <li id = "linkedIn">
-                    <a href= "https://www.linkedIn.com/in/Douglas-Silverman" target= "_blank">linkedIn.com/in/Douglas-Silverman</a>
+                <li id= "linkedIn-li"> 
+                    <div id= "linkedIn-logo" data-alt= "pictures/linkedIn logo-hover.png" onclick="openLinkedIn()"></div>
                 </li>
             </ul>
+            
+            <div id= "text-links">
+                <a>dpsilverman@umass.edu</a>
+                <a href= "/links/Douglas-Silverman_Resume.pdf" target= "_blank">Resume</a>
+            </div>
         </div>
     </body>
 </html> 

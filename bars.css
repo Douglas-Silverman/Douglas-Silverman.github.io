@@ -39,6 +39,11 @@ body{
     transition-duration: 0.4s;
 }
 
+
+.bottom-bar {
+    margin-top: 75px;
+}
+
 #active-page{
     background-color: teal;
 }
@@ -51,43 +56,81 @@ body{
 
 
 .bottom-bar ul{
+    padding-top: 25px;
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: -moz-hidden-unscrollable;
+    padding-left: 12.5%;
+    padding-right: 12.5%;
     background-color: #333;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    height: 30px;
+    width: 75%;
+    height: 75px;
+    align-content: center;
 }
 
 
 .bottom-bar li{
+    width: 50%;
     float: left;
-    width: 16.6%;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    text-align: center;
+}
+
+#text-links {
+    padding: 20px;
+    background-color: #333;
 }
 
 .bottom-bar a {
-    color: #e6e6e6;
+    display: block;
     text-align: center;
     text-decoration: none;
     font-size: 14px;
+    text-align: center;
+    color: #e6e6e6;
 }
 
-.bottom-bar a:hover{
+.bottom-bar a:hover {
     text-decoration: underline;
 }
 
-#linkedIn{
-    width: 33.2%;
-    text-align: left;
+#github-logo {
+    float: right;
+    margin-right: 15px;
+    margin-top: 20px;
+    width: 60px;
+    height: 60px;
+    transition-duration: 0.4s;
+    background-image: url("pictures/github logo.png");
+    background-position: center;
+    background-size: cover;
+    transition-duration: 0.4s;
 }
 
-#email{
-    width: 33.2%;
-    text-align: right;
+#github-logo:hover {
+    margin-right: 10px;
+    margin-top: 15px;
+    width: 70px;
+    height: 70px;
+    background-image: url("pictures/github logo-hover.png");
+    transition-duration: 0.4s;
+}
+
+#linkedIn-logo {
+    float: left;
+    margin-left: 15px;
+    margin-top: 20px;
+    width: 60px;
+    height: 60px;
+    transition-duration: 0.4s;
+    background-image: url("pictures/linkedIn logo.png");
+    background-position: center;
+    background-size: cover;
+}
+
+#linkedIn-logo:hover {
+    margin-top: 15px;
+    margin-left: 10px;
+    width: 70px;
+    height: 70px;
+    background-image: url("pictures/linkedIn logo-hover.png");
+    transition-duration: 0.4s;
 }
