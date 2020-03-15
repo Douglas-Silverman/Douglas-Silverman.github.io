@@ -1,18 +1,17 @@
-function preloader() {
+async function preloader() {
      let imgs= [
+        "pictures/mona-lisa-mosaic.gif",
+        "pictures/xochimilco.gif",
+        "pictures/profilePic.png",
         "pictures/326 logos.png",
         "pictures/Math 456.png",
-        "pictures/Favicon for git.png",
         "pictures/github logo.png",
         "pictures/github logo-hover.png",
         "pictures/linkedIn logo.png",
         "pictures/linkedIn logo-hover.png",
         "pictures/Mona_Lisa_Still.png",
-        "pictures/mona-lisa-mosaic.gif",
-        "pictures/profilePic.png",
         "pictures/strategy pic.png",
         "pictures/ultimate_group_pic.png",
-        "pictures/xochimilco.gif",
         "pictures/xochimilco-still.png"];
 
         let images = [];
