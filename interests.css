@@ -1,44 +1,43 @@
 body{
-    background-color: #4f4f4f;
+    background-color: #212121;
+    background-image: url("pictures/pixel-black-background-small.jpg");
+    background-repeat: repeat-y;
+    background-size: contain;
+    background-position: center;
     font-size: 18pt;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     width: 100%;
-    height: 100%;
 }
 
 h1 {
     font-size: 40pt;    
     font-weight: normal;
-    background-image: linear-gradient(teal, rgb(0, 170, 170));
+    text-align: right;
+    background-color: #ff0066;
     margin: 0px;
     padding-bottom: 15px;
-    margin-bottom: 15px;
-    width: 100%;
+    padding-right: 5%;
+    padding-left: 20%;
+    margin-bottom: 40px;
+    width: 75%;
 }
 
-th{
-    width: 100%;
-    padding: 0px;
+.header-1 {
+    width: 80%;
 }
+
 #ultimate-image{
     width: 432px;
     height: 275px;
-    margin-top: 10px;
+    margin-top: 25px;
+    margin-left: 25%;
 }
 
 #strategy-image{
-    margin-top: 10px;
     width: 500px;
     height: 157px;
-}
-
-td{
-    text-align: center;
-    padding: 0px;
-}
-
-table{
-    width: 100%;
+    margin-top: 25px;
+    margin-left: 25%;
 }
 
 p{
@@ -50,10 +49,27 @@ p{
     font-size: 18pt;
 }
 
+.interest-header{
+    background-color: #444;
+    padding-right: 10%;
+    margin-left: 15%;
+    width: 75%;
+    text-align: left;
+}
+
 h2{
+    padding-top: 10px;
+    padding-bottom: 15px;
+    margin: 0px;
+    margin-left: 10%;
     font-size: 28pt;
     font-weight: normal;
-    padding-bottom: 25px;
-    margin-bottom: 10px;
-    background-image: linear-gradient(#333, #444);
+}
+
+#ultimate-header {
+    background-color: #444;
+    padding-right: 5%;
+    margin-left: 20%;
+    width: 75%;
+    text-align: left;
 }

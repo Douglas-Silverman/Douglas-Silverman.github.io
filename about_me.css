@@ -1,6 +1,10 @@
 body{
     width: 100%;
-    background-color: #4f4f4f;
+    background-color: #212121;
+    background-image: url("pictures/pixel-black-background-small.jpg");
+    background-repeat: repeat-y;
+    background-size: contain;
+    background-position: center;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: #e6e6e6;
     font-size: 18pt;
@@ -9,22 +13,27 @@ body{
 h1 {
     font-size: 40pt;    
     font-weight: normal;
-    background-image: linear-gradient(teal, rgb(0, 170, 170));
+    text-align: right;
+    background-color: #ff0066;
     margin: 0px;
-    margin-bottom: 55px;
     padding-bottom: 15px;
+    padding-right: 5%;
+    padding-left: 20%;
+    margin-bottom: 40px;
+    width: 75%;
 }
 
-th {
-    width: 100%;
-    padding: 0;
+.header-1 {
+    width: 70%;
 }
+
 
 #profile-picture {
     margin-left: 10%;
     height: 375px;
     width: 375px;
     vertical-align: top;
+    border: 1px solid #444;
 }
 
 tr {
@@ -38,16 +47,24 @@ p{
     margin-right: 10%;
 }
 
+.about-me-header{
+    background-color: #444;
+    padding-right: 10%;
+    margin-top: 25px;
+    margin-left: 15%;
+    width: 75%;
+    text-align: left;
+}
+
 h2{
-    text-align: center;
-    background-image: linear-gradient(#333, #444);
+    padding-top: 10px;
+    padding-bottom: 15px;
+    margin: 0px;
+    margin-left: 10%;
+    font-size: 28pt;
     font-weight: normal;
 }
 
-td{
-    padding:0px;
-}
-
-.centered{
-    text-align: center;
+#other-interests {
+    padding-left: 20%;
 }

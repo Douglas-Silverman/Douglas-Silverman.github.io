@@ -38,7 +38,7 @@
                     <a href= "interests.html">Interests</a>
                 </li>
                 <li>
-                    <a href= "projects.html" id= "active-page">Projects</a>
+                    <a href= "projects.html"  id= "active-page">Projects</a>
                 </li>
             </ul>
         </div>
@@ -46,69 +46,59 @@
 
         
 
-        <div align= "center">
-            <table align= "center">
-                <tr>
-                    <th>
-                        <h1>Here are some of my Projects!</h1>
-                    </th>
-                </tr>
+        <div class= "header-1" align= "right">
+            <h1>Here are some of my Projects!</h1>
+        </div>
 
-                <tr class = "project-header">
-                    <td>
-                        <h2>Image Mosaic | CS 373</h2>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <p>
-                            This is one of my favorite projects from CS 373 Computer Graphics. The goal of this project is to take an input image, 
-                            and transform it into an image mosaic using a given set of images. 
-                        </p>
+        
+        <div class= "project-header">
+            <h2>Image Mosaic | CS 373</h2>
+        </div>
 
-                        <div id = "mosaic-images">
-                            <img src= "pictures/Mona_Lisa_Still.png" alt= "Mona Lisa Mosaic Gif" id= "mona-lisa-gif" data-alt= "pictures/mona-lisa-mosaic.gif" onclick= "imageTransition('mona-lisa-gif')">
-                            <div id= "spacer"></div>
-                            <img src= "pictures/xochimilco-still.png" alt= "Colorful Boat Mosaic Gif" id= "xochimilco-gif" data-alt= "pictures/xochimilco.gif" onclick= "imageTransition('xochimilco-gif')">
-                        </div>
-                    </td>
-                </tr>
+        <div>
+            <p class= "text-paragraph">
+                This is one of my favorite projects from CS 373 Computer Graphics. The goal of this project is to take an input image, 
+                and transform it into an image mosaic using a given set of images. 
+            </p>
+        </div>
 
-                 <tr class = "project-header">
-                    <td>
-                        <h2>Web Programming Project | CS 326</h2>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <p>
-                            For my CS 326 Final Project, I will be working with 3 other students to create an interactive website. 
-                            The frontend will be made utilizing the React.js framework, and be styled using Bootstrap, 
-                            while AWS and node.js will be used to run the backend and applications.
-                        </p>
+        <div id = "mosaic-images">
+            <img src= "pictures/Mona_Lisa_Still.png" alt= "Mona Lisa Mosaic Gif" id= "mona-lisa-gif" data-alt= "pictures/mona-lisa-mosaic.gif" onclick= "imageTransition('mona-lisa-gif')">
+            <div id= "spacer"></div>
+            <img src= "pictures/xochimilco-still.png" alt= "Colorful Boat Mosaic Gif" id= "xochimilco-gif" data-alt= "pictures/xochimilco.gif" onclick= "imageTransition('xochimilco-gif')">
+        </div>
 
-                        <img src= "pictures/326 logos.png" alt= "technology used logos" class= "project-picture">
-    
-                    </td>
-                </tr>
+        <div class= "project-header">
+                <h2>Web Programming Project | CS 326</h2>
+        </div>
 
-                <tr class = "project-header">
-                    <td>
-                        <h2>Math Modeling Project | Math 456</h2>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <p>
-                            The goal of this project is to analyze a large dataset of Counter-String: Global Offensive competitve esports 
-                            and to create a model for predicting the winner of a given match. The data-set is open source and was found on kaggle.com. 
-                            The model will be written in python3 and utilize sklearn. 
-                        </p>
-                        <img src= "pictures/math 456.png" alt= "CS:GO Banner" id= "csgo-image" class= "project-picture">
-                    </td>
-                </tr>
+        <div class= "text-paragraph">
+            <p>
+                For my CS 326 Final Project, I will be working with 3 other students to create an interactive website. 
+                The frontend will be made utilizing the React.js framework, and be styled using Bootstrap, 
+                while AWS and node.js will be used to run the backend and applications.
+            </p>
+        </div>
 
-            </table>
+        <div class= "project-picture">
+            <img src= "pictures/326 logos.png" alt= "technology used logos" class= "project-picture">
+        </div>
+
+
+        <div class= "project-header">
+            <h2>Math Modeling Project | Math 456</h2>
+        </div>
+
+        <div>
+            <p class= "text-paragraph">
+                The goal of this project is to analyze a large dataset of Counter-String: Global Offensive competitve esports 
+                and to create a model for predicting the winner of a given match. The data-set is open source and was found on kaggle.com. 
+                The model will be written in python3 and utilize sklearn. 
+            </p>
+        </div>
+
+        <div class= "project-picture">
+            <img src= "pictures/math 456.png" alt= "CS:GO Banner" id= "csgo-image" class= "project-picture">
         </div>
 
 

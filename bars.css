@@ -11,7 +11,7 @@ body{
     margin: 0;
     padding: 0;
     overflow: -moz-hidden-unscrollable;
-    background-color: #333;
+    background-color: #444;
     position: fixed;
     top: 0;
     width: 100%;
@@ -35,27 +35,26 @@ body{
 }
 
 .toolbar li a:hover {
-    background-color: #111;
-    transition-duration: 0.4s;
+    background-color: #222;
+    transition-duration: 0.5s;
 }
 
 #active-page{
-    background-color: teal;
+    background-color: #00a0a0;
 }
 
 #active-page:hover {
-    background-color: rgb(0, 170, 170);
-    transition-duration: 0.4s;
+    background-color: #007070;
+    transition-duration: 0.5s;
 }
-
 
 
 .bottom-bar {
     margin-top: 75px;
-    background-color: #333;
     position: absolute;
     vertical-align: baseline;
     width: 100%;
+    background-color: #222;
 }
 
 .bottom-bar ul{
@@ -65,7 +64,6 @@ body{
     padding: 0;
     padding-left: 12.5%;
     padding-right: 12.5%;
-    background-color: #333;
     width: 75%;
     height: 75px;
     align-content: center;
@@ -79,7 +77,6 @@ body{
 
 #text-links {
     padding: 20px;
-    background-color: #333;
 }
 
 .bottom-bar a {
