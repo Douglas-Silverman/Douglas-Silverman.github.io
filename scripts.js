@@ -4,7 +4,7 @@ async function preloader() {
         "pictures/xochimilco.gif",
         "pictures/profilePic.png",
         "pictures/326 logos.png",
-        "pictures/Math 456.png",
+        "pictures/math 456.png",
         "pictures/github logo.png",
         "pictures/github logo-hover.png",
         "pictures/linkedIn logo.png",
