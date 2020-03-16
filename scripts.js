@@ -19,7 +19,6 @@ async function preloader() {
             images[i] = new Image()
             images[i].src = imgs[i]
         }
-        console.log(images);
 }
 
 
