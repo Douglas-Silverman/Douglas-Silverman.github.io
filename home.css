@@ -10,40 +10,31 @@ body{
 }
 
 #icon {
-    width: 150px;
-    height: 150px;
-}
-.greeter table{
-    width: 100%;
+    width: 175px;
+    height: 175px;
 }
 
-.greeter td{
-    width: 33%;
-    text-align: center;
-}
-#img{
-    text-align: right;
-}
-.greeter h1{
+h1 {
     letter-spacing: 1px;
     text-align: center;
-    margin-top: 25px;
-    margin-bottom: 50px;
+    margin-top: 8%;
+    margin-bottom: 15px;
     font-size: 40pt;
     font-weight: normal;
     padding: 0px;
 }
 
-.greeter strong{
-    display: block;
-    text-align: center;
-    margin-bottom: 50px;
-    font-size: 14pt;
-    color: #ff0066;
+h2 {
+    margin-top: 50px;
+    margin-bottom: 40px;
+    font-size: 20pt;
+    font-weight: normal;
 }
 
-#code-snippet{
-    width: 274px;
-    height:106px;
-    margin-bottom: 65px;
+p {
+    display: block;
+    text-align: center;
+    margin: 0px;
+    margin-bottom: 40px;
+    font-size: 14pt;
 }

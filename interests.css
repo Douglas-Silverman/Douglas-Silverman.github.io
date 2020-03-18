@@ -13,12 +13,14 @@ h1 {
     font-size: 40pt;    
     font-weight: normal;
     text-align: right;
-    background-color: #ff0066;
+    /* background-color: #4aa552; */
+    background-color: #0095a0;
     margin: 0px;
+    margin-top: 10%;
+    margin-bottom: 40px;
     padding-bottom: 15px;
     padding-right: 5%;
     padding-left: 20%;
-    margin-bottom: 40px;
     width: 75%;
 }
 
@@ -30,20 +32,23 @@ h1 {
     width: 432px;
     height: 275px;
     margin-top: 25px;
-    margin-left: 25%;
+    border: 1px solid #444;
 }
 
 #strategy-image{
     width: 500px;
     height: 157px;
     margin-top: 25px;
-    margin-left: 25%;
+    border: 1px solid #444;
+}
+
+.interests {
+    text-align: center;
 }
 
 p{
     margin-top: 10px;
-    margin-left: 10%;
-    width: 80%;
+    width: 70%;
     padding: 0;
     text-align: justify;
     font-size: 18pt;
@@ -51,8 +56,8 @@ p{
 
 .interest-header{
     background-color: #444;
-    padding-right: 10%;
-    margin-left: 15%;
+    padding: 0px;
+    margin-left: 25%;
     width: 75%;
     text-align: left;
 }
@@ -61,15 +66,11 @@ h2{
     padding-top: 10px;
     padding-bottom: 15px;
     margin: 0px;
-    margin-left: 10%;
+    margin-left: 5%;
     font-size: 28pt;
     font-weight: normal;
 }
 
 #ultimate-header {
-    background-color: #444;
-    padding-right: 5%;
-    margin-left: 20%;
-    width: 75%;
-    text-align: left;
+    margin-left: 10%;
 }
