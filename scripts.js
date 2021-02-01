@@ -40,3 +40,7 @@ function imageTransition(id) {
     }, 200);
 }
 
+function openSportsBettingProject() {
+    window.location.href = "sports_betting_project.html";
+}
+

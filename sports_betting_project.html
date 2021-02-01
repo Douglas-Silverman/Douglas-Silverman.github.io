@@ -2,11 +2,11 @@
 <html lang= "en">
     <head>
         <link href= "bars.css" rel= "stylesheet">
-        <link href= "home.css" rel= "stylesheet">
+        <link href= "projects.css" rel= "stylesheet">
         <script src= "scripts.js"></script>
 
         <!-- Favicon Links  -->
-        
+
         <link rel="apple-touch-icon" sizes="57x57" href="/pictures/favicon/apple-icon-57x57.png">
         <link rel="apple-touch-icon" sizes="60x60" href="/pictures/favicon/apple-icon-60x60.png">
         <link rel="apple-touch-icon" sizes="72x72" href="/pictures/favicon/apple-icon-72x72.png">
@@ -29,7 +29,7 @@
         <div class= "toolbar">
             <ul class= "bar">
                 <li>
-                    <a href= "index.html" id= "active-page">Home</a>
+                    <a href= "index.html">Home</a>
                 </li>
                 <li>
                     <a href= "about_me.html">About Me</a>
@@ -38,47 +38,36 @@
                     <a href= "interests.html">Interests</a>
                 </li>
                 <li>
-                    <a href= "projects.html">Projects</a>
+                    <a href= "projects.html"  id= "active-page">Projects</a>
                 </li>
             </ul>
         </div>
 
-        <div class= "greeter" align= "center">
-            <h1>Welcome to My Website!</h1>
-                        
-            <img src= "pictures/Favicon for git.png" alt= "icon" id="icon">
 
-            <h2>My name is Douglas Silverman</h2>
-            <p>
-                Please explore and learn more about me!
+        <div class= "header-1" align= "right">
+            <h1>Sports Betting Project</h1>
+        </div>
+
+        <div class= "project-header">
+            <h2>Summary</h2>
+        </div>
+
+        <div>
+            <p class= "text-paragraph">
+                The goal of this project was to analyze different betting strategies in regards to sports betting. 
+                Some of these strategies are based off of "gambler's fallacy" casino strategies such as doubling your bet size after an unsuccessful wager. 
+                Another strategy that was tested was a Statistical approach that predicted winners of matches using a Poisson Distribution.
             </p>
+        </div>
 
-            <p>
-                Check out the links at the bottom for more information
+
+        <div class= "project-header">
+            <h2>What is a bet and what are the guidelines for modeling?</h2>
+        </div>
+
+        <div>
+            <p class= "text-paragraph">
+                A bet consists of a wager on a single match between 2 teams. The bet is not complex, "I bet $10 that Team A will beat Team B". 
+                If Team A loses the match then I lose the $10. But if team A wins the match then I get a payout based on Team A's odds of winning. 
             </p>
         </div>
-
-
-        <div class= "bottom-bar" align= "center" style= "margin-top: 10%;">
-            <ul>
-                <li id= "github-li">
-                    <div id= "github-logo" data-alt= "pictures/github logo-hover.png" onclick="openGithub()" align= "right"></div>
-                </li>
-                <li id= "linkedIn-li"> 
-                    <div id= "linkedIn-logo" data-alt= "pictures/linkedIn logo-hover.png" onclick="openLinkedIn()"></div>
-                </li>
-            </ul>
-            
-            <div id= "text-links">
-                <a>dpsilverman@umass.edu</a>
-                <a href= "/links/Douglas-Silverman_Resume.pdf" target= "_blank">Resume</a>
-            </div>
-        </div>
-
-        <div class="hidden">
-            <script type="text/javascript">
-                preloader();
-            </script>
-        </div>
-    </body>
-</html> 

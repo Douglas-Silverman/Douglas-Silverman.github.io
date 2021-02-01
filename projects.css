@@ -35,6 +35,18 @@ h1 {
     margin-left: 15%;
     width: 75%;
     text-align: left;
+    transition-duration: 0.8s;
+}
+
+.project-header:hover{
+    padding-right: 15%;
+    margin-left: 10%;
+    transition-duration: 0.8s;
+}
+
+.project-header:hover > h2 {
+    font-size: 34pt;
+    transition-duration: 0.8s;
 }
 
 h2{
@@ -44,6 +56,7 @@ h2{
     margin-left: 10%;
     font-size: 28pt;
     font-weight: normal;
+    transition-duration: 0.8s;
 }
 
 .project-picture {
@@ -54,13 +67,18 @@ h2{
 
 .text-paragraph {
     text-align: left;
+    background-color: #666;
+    margin-top: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 p {
-    margin-left: 15%;
+    margin-left: 20%;
     margin-bottom: 40px;
     padding-left: 15px;
-    margin-right: 10%;
+    padding-right: 10%;
+    margin-right: 0;
 }
 
 #mosaic-images{
@@ -91,4 +109,25 @@ p {
     align-self: auto;
     vertical-align: top;
     border: 1px solid #444;
+}
+
+#sports-betting-logos {
+    width: 600px;
+    height: 200px;
+    margin-left: 15%;
+    vertical-align:top;
+}
+
+#CS326-logos {
+    width: 700px;
+    height: 175px;
+    margin-left: 10%;
+    vertical-align: top;
+}
+
+#corona-logos {
+    width: 700px;
+    height: 175px;
+    margin-left: 10%;
+    vertical-align: top;
 }

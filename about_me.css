@@ -67,6 +67,18 @@ p{
     margin-left: 25%;
     width: 75%;
     text-align: left;
+    transition-duration: 0.8s;
+}
+
+.about-me-header:hover{
+    padding-right: 15%;
+    margin-left: 15%;
+    transition-duration: 0.8s;
+}
+
+.about-me-header:hover > h2{
+   font-size: 34pt;
+   transition-duration: 0.8s;
 }
 
 h2{
@@ -76,6 +88,7 @@ h2{
     margin-left: 10%;
     font-size: 28pt;
     font-weight: normal;
+    transition-duration: 0.8s;
 }
 
 #other-interests {
