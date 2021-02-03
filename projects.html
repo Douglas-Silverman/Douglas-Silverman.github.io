@@ -3,8 +3,8 @@
     <head>
         <link href= "bars.css" rel= "stylesheet">
         <link href= "projects.css" rel= "stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src= "scripts.js"></script>
-
         <!-- Favicon Links  -->
 
         <link rel="apple-touch-icon" sizes="57x57" href="/pictures/favicon/apple-icon-57x57.png">
@@ -46,19 +46,19 @@
 
         
 
-        <div class= "header-1" align= "right">
+        <div class= "header-1">
             <h1>Here are some of my Projects!</h1>
         </div>
 
         
-        <div class= "project-header">
+        <div class= "project-header" style="margin-top: 0;">
             <h2>Image Mosaic | CS 373</h2>
         </div>
 
-        <div>
-            <p class= "text-paragraph">
+        <div class= "text-paragraph">
+            <p>
                 This is one of my favorite projects from CS 373 Computer Graphics. The goal of this project is to take an input image, 
-                and transform it into an image mosaic using a given set of images. 
+                and transform it into an image mosaic using a given set of images.
             </p>
         </div>
 
@@ -68,25 +68,23 @@
             <img src= "pictures/xochimilco-still.png" alt= "Colorful Boat Mosaic Gif" id= "xochimilco-gif" data-alt= "pictures/xochimilco.gif" onclick= "imageTransition('xochimilco-gif')">
         </div>
 
-        <div>
-            <p class= "text-paragraph" style= "margin-top: 0px;">
-                The math behind this project is really cool. Click <a href= 'https://docs.google.com/presentation/d/1sOUNNplKa1nVzg7ftgWQ1FIKRGH4QUl_dx2gbmQstiA/edit#slide=id.p'>here</a> to learn more!
-            </p>
+        <div class= "learn-more">
+            <a href= 'https://docs.google.com/presentation/d/1sOUNNplKa1nVzg7ftgWQ1FIKRGH4QUl_dx2gbmQstiA/edit#slide=id.p'>Learn More</a>
         </div>
 
 
 
 
-        <div class= "project-header" onclick= "window.location.href = 'sports_betting_project.html';">
+        <div class= "project-header">
             <h2>Sports Betting Project</h2>
         </div>
 
-        <div>
-            <p class= "text-paragraph">
+        <div class= "text-paragraph">
+            <p>
                 The goal of this project was to analyze conventional betting strategies and their effectiveness when applied to sports betting. 
                 Over the past decade, many states have removed their restrictions on sports betting. The industry has started to boom with the rise of Fantasy Football and other new way of betting on sports. 
                 This project analyzes some strategies that casual sports gamblers might look and their effectiveness. 
-                Additionally, a Poisson Distribution based algorithm was also used as a more statistical approach to gambling. Please click above to learn more.
+                Additionally, a Poisson Distribution based algorithm was also used as a more statistical approach to gambling. Please click below to learn more.
             </p>
         </div>
 
@@ -94,20 +92,23 @@
                 <img src= "pictures/sports betting logos.png" alt= "Sports Betting Logos" id= "sports-betting-logos">
         </div>
 
+        <div class= "learn-more">
+            <a href= 'sports_betting_project.html'>Learn More</a>
+        </div>
 
         
         
         
-        <div class= "project-header" onclick= "window.location.href = 'boredgames.html';">
+        <div class= "project-header">
                 <h2>BoredGames | CS 326</h2>
         </div>
 
-        <div>
-            <p class= "text-paragraph">
+        <div class= "text-paragraph">
+            <p>
                 For my CS 326 Web Programming Final Project, I worked with 2 other students to create a website for board game enthusiasts to connect. 
                 This project was supposed to be very ambitious, but, due to sudden worldwide Pandemic of COVID-19 we made a rudementary site. 
                 We used Bootstrap for the frontend while using MongoDb and Node.js for the backend.
-                Please click the above to learn more.
+                Please click below to learn more.
             </p>
         </div>
 
@@ -115,17 +116,20 @@
             <img src= "pictures/326 logos.png" alt= "technology used logos" id= "CS326-logos">
         </div>
 
+        <div class= "learn-more">
+            <a href= 'boredgames.html'>Learn More</a>
+        </div>
 
 
 
-        <div class= "project-header" onclick= "window.location.href = 'corona_nlp.html';">
-            <h2>COVID-19 Tweet Sentiment Analysis | CS 490A</h2>
+        <div class= "project-header">
+            <h2>Sentiment Analysis on COVID-19 Tweets | CS 490A</h2>
     </div>
 
-    <div>
-        <p class= "text-paragraph">
+    <div class= "text-paragraph">
+        <p>
             The goal of this project was to perform sentiment analysis on tweets during the first two months of the COVID-19 Pandemic. This project was my final project for CS 490A Natural Language Processing. 
-            I worked in a team with 2 other students using Python 3.7 and scikit-learn. Please click above to learn more.
+            I worked in a team with 2 other students using Python 3.7 and scikit-learn. Please click below to learn more.
         </p>
     </div>
 
@@ -133,11 +137,20 @@
         <img src= "pictures/corona tweets logos.png" alt= "technology used logos" id= "corona-logos">
     </div>
 
+    <div class= "learn-more">
+        <a href= 'corona_nlp.html'>Learn More</a>
+    </div>
+
+    <a href= "links/CS 490A Final Project Report.pdf"  target= "_blank">Final Report</a>
 
 
 
-
-
+    <script src= "scroll.js"></script>
+    <script type= "text/javascript">
+        ScrollOut({
+            targets: '.header-1, .project-header, .text-paragraph, .project-picture, .learn-more, #mosaic-images'
+        })
+    </script>
         <div class= "bottom-bar" align= "center">
             <ul>
                 <li id= "github-li">

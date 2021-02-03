@@ -51,7 +51,7 @@
             <h1>Douglas Silverman</h1>
         </div>
 
-        <div>
+        <div class= "about-me-info">
             <table align = "center">
                 <tr>
                     <td rowspan= "2" align="right" id= "profile-td">
@@ -78,18 +78,25 @@
                 </tr>
             </table>
             
-            <div class= "about-me-header" onclick="window.location.href= 'interests.html';">
-                <h2>
+            <div class= "about-me-header">
+                <a href= "interests.html">
                     Some of my other interests are:
-                </h2>
+                </a>
             </div>
-                <p id= "other-interests">
+            <div class= "text-paragraph">
+                <p>
                     Chess, Poker, Ultimate Fribsee, Videogames
                 </p>
+            </div>
         </div>
 
 
-
+        <script src= "scroll.js"></script>
+        <script type= "text/javascript">
+            ScrollOut({
+                targets: '.header-1, table, .about-me-header, .text-paragraph'
+            })
+        </script>
 
 
         <div class= "bottom-bar" align= "center" style= "margin-top: 10%;">

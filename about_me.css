@@ -11,25 +11,47 @@ body{
 }
 
 h1 {
+    margin: 0;
+    text-align: right;
     font-size: 40pt;    
     font-weight: normal;
-    text-align: right;
     background-color: #0095a0;
-    margin: 0px;
-    margin-top: 10%;
-    padding-bottom: 15px;
-    padding-right: 5%;
-    padding-left: 25%;
-    width: 75%;
+    display: inline-block;
+    width: 800px;
+}
+
+.header-1[data-scroll="in"] {
+    text-align: right;
+    width: 80%;
+    transition-duration: 2.5s;
 }
 
 .header-1 {
-    width: 70%;
-    margin-bottom: 75px;
+    text-align: left;
+    background-color: #0095a0;
+    margin: 0px;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    padding-bottom: 15px;
+    padding-right: 25px;
+    padding-left: 0%;
+    width: 50%;
+    overflow: hidden;
+    transition-duration: 2.5s;
 }
+
 
 table {
     width: 100%;
+    opacity: 0;
+    transition-delay: 1.0;
+    transition-duration: 3.0s;
+}
+
+table[data-scroll="in"]{
+    opacity: 1;
+    transition-delay: 1.0s;
+    transition-duration: 3.0s;
 }
 
 td{
@@ -60,38 +82,73 @@ p{
     margin-right: 10%;
 }
 
+
 .about-me-header{
     background-color: #444;
     padding-right: 0;
-    margin-top: 75px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    margin-left: 80%;
+    margin-top: 100px;
+    width: 20%;
+    text-align: left;
+    overflow: hidden;
+    transition-duration: 2.5s;
+}
+
+.about-me-header[data-scroll="in"]{
+    background-color: #444;
+    padding-right: 0;
     margin-left: 25%;
     width: 75%;
     text-align: left;
-    transition-duration: 0.8s;
+    transition-duration: 2.5s;
 }
 
 .about-me-header:hover{
-    padding-right: 15%;
-    margin-left: 15%;
+    padding-right: 5%;
     transition-duration: 0.8s;
 }
 
-.about-me-header:hover > h2{
-   font-size: 34pt;
+.about-me-header:hover > a{
+   font-size: 28pt;
+   text-decoration: underline;
    transition-duration: 0.8s;
 }
 
-h2{
-    padding-top: 10px;
-    padding-bottom: 15px;
+a{
+    color: #e6e6e6;
+    text-decoration: none;
     margin: 0px;
     margin-left: 10%;
-    font-size: 28pt;
+    font-size: 26pt;
     font-weight: normal;
+    width: 500px;
     transition-duration: 0.8s;
 }
 
-#other-interests {
-    margin-top: 25px;
-    text-align: center;
+
+.text-paragraph {
+    text-align: left;
+    background-color: #666;
+    margin-top: 0;
+    margin-left: 80%;
+    width: 20%;
+    overflow: hidden;
+    transition-duration: 2.5s;
+}
+
+.text-paragraph[data-scroll="in"]{
+    margin-top: 0;
+    margin-left: 40%;
+    width: 60%;
+    transition-duration: 2.5s;
+}
+
+p {
+    margin-top: 0;
+    padding-left: 25px;
+    padding-top: 10px;
+    margin-right: 0;
+    width: 800px;
 }
