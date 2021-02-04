@@ -1,13 +1,13 @@
 body{
-    width: 100%;
     background-color: #212121;
     background-image: url("pictures/pixel-black-background-small.jpg");
     background-repeat: repeat-y;
     background-size: contain;
-    background-position: center;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: #e6e6e6;
+    text-align: center;
     font-size: 18pt;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    font-weight: normal;
+    width: 100%;
 }
 
 h1 {
@@ -116,7 +116,7 @@ p{
    transition-duration: 0.8s;
 }
 
-a{
+.about-me-header > a{
     color: #e6e6e6;
     text-decoration: none;
     margin: 0px;
