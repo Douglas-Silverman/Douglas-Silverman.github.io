@@ -43,3 +43,4 @@ function imageTransition(id) {
 function openSportsBettingProject() {
     window.location.href = "sports_betting_project.html";
 }
+

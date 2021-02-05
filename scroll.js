@@ -217,7 +217,7 @@ var ScrollOut = (function () {
                 var ctx = elementContextList[x];
                 var el = ctx.element;
                 var visible = ctx.visible;
-                var justOnce = el.hasAttribute('scrollout-once') || false; // Once
+                var justOnce = el.hasAttribute('scrollout-once') || true; // Once (set this to true to only animate once)
                 if (ctx._changed) {
                     ctx._changed = false;
                     props(el, ctx);

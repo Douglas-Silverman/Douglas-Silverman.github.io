@@ -1,6 +1,6 @@
 body{
     background-color: #212121;
-    background-image: url("pictures/pixel-black-background-small.jpg");
+    background-image: url("pictures/Black-background-5.2.jpg");
     background-repeat: repeat-y;
     background-size: contain;
     background-position: center;
@@ -11,110 +11,150 @@ body{
 
 h1 {
     margin: 0;
-    text-align: right;
     font-size: 40pt;    
     font-weight: normal;
     background-color: #0095a0;
-    display: inline-block;
-    width: 800px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    padding-left: 40px;
+    margin: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 50%;
+    right: 0;
+    width: max-content;
+    position: absolute;
+    z-index: inherit;
+    transition-duration: 2.0s;
+}
+
+h1[data-scroll="in"]{
+    left: 0;
+    right: 0;
+    position: absolute;
+    transition-duration: 2.0s;
 }
 
 .header-1[data-scroll="in"] {
-    text-align: right;
-    width: 80%;
-    transition-duration: 2.5s;
+    width: 50%;
+    margin:0px;
+    margin-left: 50%;
+    transition-duration: 2.0s;
 }
 
 .header-1 {
-    text-align: left;
     background-color: #0095a0;
+    color: #0095a0;
     margin: 0px;
-    margin-top: 50px;
-    margin-bottom: 40px;
+    margin-left: 70%;
+    padding: 0;
+    padding-top: 10px;
     padding-bottom: 15px;
-    padding-right: 25px;
-    padding-left: 0%;
-    width: 50%;
-    overflow: hidden;
-    transition-duration: 2.5s;
+    font-size: 40pt;
+    width: 30%;
+    position: absolute;
+    z-index: inherit;
+    transition-duration: 2.0s;
 }
 
 #ultimate-image{
     width: 432px;
     height: 275px;
     margin-top: 25px;
-    border: 1px solid #444;
+    border: 3px solid #444;
 }
 
 #strategy-image{
     width: 500px;
     height: 157px;
     margin-top: 25px;
-    border: 1px solid #444;
+    border: 3px solid #444;
 }
 
 
-p{
-    margin-top: 10px;
-    width: 70%;
-    padding: 0;
+p{  
+    margin: 0;
     text-align: justify;
+    margin-top: 50px;
+    width: 55%;
+    padding: 10px;
     font-size: 18pt;
-    opacity: 0;
-    transition-delay: 1.0s;
-    transition-duration: 3.0s;
 }
 
-p[data-scroll="in"] {
-    opacity: 1;
-    transition-delay: 1.0s;
-    transition-duration: 3.0s;
-}
+/* p[data-scroll="in"] {
+    transition-duration: 2.0s;
+} */
 
 img{
-    opacity: 0;
-    transition-delay: 1.0s;
-    transition-duration: 3.0s;
+    margin-bottom: 100px;
+    opacity: 1;
+    /* transition-delay: 1.0s;
+    transition-duration: 3.0s; */
 }
 
-img[data-scroll="in"]{
+/* img[data-scroll="in"]{
     opacity: 1;
     transition-delay: 1.0s;
     transition-duration: 3.0s;
+} */
+
+
+
+.header[data-scroll="in"]{
+    width: 50%;
+    margin:0px;
+    margin-right: 50%;
+    transition-duration: 2.0s;
 }
 
-
-
-.interest-header{
+.header{
     background-color: #444;
-    padding-right: 0;
-    margin-left: 60%;
-    margin-top: 100px;
-    width: 40%;
-    text-align: left;
-    overflow: hidden;
-    transition-duration: 2.5s;
-}
-
-.interest-header[data-scroll="in"]{
-    background-color: #444;
-    padding-right: 0;
-    margin-left: 15%;
-    width: 85%;
-    text-align: left;
-    overflow: hidden;
-    transition-duration: 2.5s;
+    color: #444;
+    padding: 0;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    font-size: 28pt;
+    width: 30%;
+    margin:0px;
+    margin-right: 70%;
+    position: absolute;
+    z-index: inherit;
+    transition-duration: 2.0s;
 }
 
 h2{
+    background-color: #444;
     padding-top: 10px;
     padding-bottom: 15px;
+    padding-right: 40px;
     margin: 0px;
-    margin-left: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+    left: 0;
+    right: 60%;
     font-size: 28pt;
+    width: max-content;
+    text-align: left;
+    position: absolute;
+    z-index: inherit;
     font-weight: normal;
+    transition-duration: 2.0s;
 }
 
-#ultimate-header {
-    margin-left: 10%;
+
+h2[data-scroll="in"]{
+    left: 0;
+    right: 0;
+    position: absolute;
+    transition-duration: 2.0s;
+}
+
+.interests{
+    z-index: -1;
+}
+
+.post-header{
+    opacity: 0;
+    font-size: 28pt;
 }
