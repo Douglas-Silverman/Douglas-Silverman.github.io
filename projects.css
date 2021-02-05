@@ -1,3 +1,12 @@
+:root{
+    /* --orange: #DD7230; */
+    --teal: #0095a0;
+    --orange: #DD702C;
+    --grey: #444;
+    --white: #e6e6e6;
+}
+
+
 body{
     background-color: #212121;
     background-image: url("pictures/Black-background-5.2.jpg");
@@ -14,7 +23,7 @@ h1 {
     margin: 0;
     font-size: 40pt;    
     font-weight: normal;
-    background-color: #0095a0;
+    background-color: var(--teal);
     padding-top: 10px;
     padding-bottom: 15px;
     padding-left: 40px;
@@ -44,8 +53,8 @@ h1[data-scroll="in"]{
 }
 
 .header-1 {
-    background-color: #0095a0;
-    color: #0095a0;
+    background-color: var(--teal);
+    color: var(--teal);
     margin: 0px;
     margin-left: 70%;
     padding: 0;
@@ -66,8 +75,8 @@ h1[data-scroll="in"]{
 }
 
 .header{
-    background-color: #444;
-    color: #444;
+    background-color: var(--orange);
+    color: var(--orange);
     padding: 0;
     padding-top: 10px;
     padding-bottom: 15px;
@@ -81,16 +90,15 @@ h1[data-scroll="in"]{
 }
 
 h2{
-    background-color: #444;
+    background-color: var(--orange);
     padding-top: 10px;
     padding-bottom: 15px;
     padding-right: 40px;
     margin: 0px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 100px;
     left: 0;
-    right: 60%;
+    right: 55%;
     font-size: 28pt;
     width: max-content;
     text-align: left;
@@ -109,6 +117,8 @@ h2[data-scroll="in"]{
 }
 
 .post-header{
+    padding-top: 10px;
+    padding-bottom: 15px;
     opacity: 0;
     font-size: 28pt;
 }
@@ -121,8 +131,9 @@ h2[data-scroll="in"]{
 
 p{  
     margin: 0;
-    text-align: justify;
-    margin-top: 50px;
+    text-align: left;
+    margin-top: 30px;
+    margin-bottom: 30px;
     width: 55%;
     padding: 10px;
     font-size: 18pt;
@@ -130,13 +141,12 @@ p{
 
 .learn-more {
     text-align: left;
-    background-color: #0095a0;
+    background-color: var(--teal);
     margin: 0px;
     margin-top: 50px;
     margin-bottom: 150px;
     margin-left: 90%;
     padding-bottom: 15px;
-    padding-left: 30px;
     width: 10%;
     transition-duration: 2.0s;
 }
@@ -149,16 +159,17 @@ p{
 }
 
 .learn-more:hover {
-    margin-left: 60%;
-    width: 40%;
-    transition-duration: 2.0s;
+    margin-left: 62.5%;
+    width: 37.5%;
+    transition-duration: 1.0s;
 }
 
 .learn-more > a {
     display: inline-block;
     padding-top: 10px;
+    padding-left: 25px;
     text-decoration: none;
-    color: #e6e6e6;
+    color: var(--white);
 }
 
 .learn-more > a:hover {
@@ -182,7 +193,6 @@ p{
     margin-bottom: 30px;
     width: 345px;
     height: 400px;
-    border: 3px solid #444;
 }
 
 #spacer {
@@ -195,7 +205,6 @@ p{
     height: 268px;
     align-self: auto;
     vertical-align: top;
-    border: 3px solid #444;
 }
 
 #sports-betting-logos {
@@ -217,12 +226,12 @@ p{
 }
 
 .project-link {
-    text-align: right;
-    background-color: #0095a0;
+    text-align: left;
+    background-color: var(--teal);
     margin: 0px;
     margin-top: 50px;
+    margin-left: 90%;
     padding-bottom: 15px;
-    padding-right: 25px;
     padding-left: 0%;
     width: 10%;
     overflow: hidden;
@@ -232,20 +241,22 @@ p{
 
 .project-link[data-scroll="in"] {
     width: 50%;
+    margin-left: 50%;
     transition-duration: 2.0s;
 }
 
 .project-link:hover {
-    width: 55%;
-    font-size: 20pt;
-    transition-duration: 2.0s;
+    margin-left: 47.5%;
+    width: 52.5%;
+    transition-duration: 1.0s;
 }
 
 .project-link > a {
     display: inline-block;
     padding-top: 10px;
+    padding-left: 25px;
     text-decoration: none;
-    color: #e6e6e6;
+    color: var(--white);
     width: 400px;
 }
 

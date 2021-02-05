@@ -1,6 +1,14 @@
+:root{
+    /* --orange: #DD7230; */
+    --teal: #0095a0;
+    --orange: #DD702C;
+    --grey: #444;
+    --white: #e6e6e6;
+}
+
 body{
     background-color: #212121;
-    background-image: url("pictures/pixel-black-background-small.jpg");
+    background-image: url("pictures/Black-background-5.2.jpg");
     background-repeat: repeat-y;
     background-size: contain;
     text-align: center;
@@ -12,46 +20,56 @@ body{
 
 h1 {
     margin: 0;
-    text-align: right;
     font-size: 40pt;    
     font-weight: normal;
-    background-color: #0095a0;
-    display: inline-block;
-    width: 800px;
+    background-color: var(--teal);
+    padding-top: 10px;
+    padding-bottom: 15px;
+    padding-left: 40px;
+    margin: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 50%;
+    right: 0;
+    width: max-content;
+    position: absolute;
+    z-index: -1;
+    transition-duration: 2.0s;
+}
+
+h1[data-scroll="in"]{
+    left: 0;
+    right: 0;
+    position: absolute;
+    transition-duration: 2.0s;
 }
 
 .header-1[data-scroll="in"] {
-    text-align: right;
-    width: 80%;
-    transition-duration: 2.5s;
+    width: 50%;
+    margin:0px;
+    margin-left: 50%;
+    transition-duration: 2.0s;
 }
 
 .header-1 {
-    text-align: left;
-    background-color: #0095a0;
+    background-color: var(--teal);
+    color: var(--teal);
     margin: 0px;
-    margin-top: 50px;
-    margin-bottom: 40px;
+    margin-left: 70%;
+    padding: 0;
+    padding-top: 10px;
     padding-bottom: 15px;
-    padding-right: 25px;
-    padding-left: 0%;
-    width: 50%;
-    overflow: hidden;
-    transition-duration: 2.5s;
+    font-size: 40pt;
+    width: 30%;
+    position: absolute;
+    z-index: -1;
+    transition-duration: 2.0s;
 }
 
 
 table {
     width: 100%;
-    opacity: 0;
-    transition-delay: 1.0;
-    transition-duration: 3.0s;
-}
-
-table[data-scroll="in"]{
-    opacity: 1;
-    transition-delay: 1.0s;
-    transition-duration: 3.0s;
+    margin-bottom: 75px;
 }
 
 td{
@@ -71,84 +89,86 @@ td{
     height: 375px;
     width: 375px;
     vertical-align: top;
-    border: 1px solid #444;
 }
 
-
-p{
-    margin: 0px;
-    margin-left: 50px;
-    padding: 5px;
-    margin-right: 10%;
+.header[data-scroll="in"]{
+    width: 50%;
+    margin:0px;
+    margin-right: 50%;
+    transition-duration: 2.0s;
 }
 
-
-.about-me-header{
-    background-color: #444;
-    padding-right: 0;
+.header{
+    background-color: var(--orange);
+    color: var(--orange);
+    padding: 0;
     padding-top: 10px;
     padding-bottom: 15px;
-    margin-left: 80%;
-    margin-top: 100px;
-    width: 20%;
-    text-align: left;
-    overflow: hidden;
-    transition-duration: 2.5s;
+    font-size: 28pt;
+    width: 30%;
+    margin:0px;
+    margin-right: 70%;
+    position: absolute;
+    z-index: -1;
+    transition-duration: 2.0s;
 }
 
-.about-me-header[data-scroll="in"]{
-    background-color: #444;
-    padding-right: 0;
-    margin-left: 25%;
-    width: 75%;
-    text-align: left;
-    transition-duration: 2.5s;
-}
-
-.about-me-header:hover{
-    padding-right: 5%;
-    transition-duration: 0.8s;
-}
-
-.about-me-header:hover > a{
-   font-size: 28pt;
-   text-decoration: underline;
-   transition-duration: 0.8s;
-}
-
-.about-me-header > a{
-    color: #e6e6e6;
-    text-decoration: none;
+#interest-link{
+    background-color: var(--orange);
+    padding-top: 10px;
+    padding-bottom: 15px;
+    padding-right: 40px;
     margin: 0px;
-    margin-left: 10%;
-    font-size: 26pt;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+    left: 0;
+    right: 60%;
+    font-size: 28pt;
+    width: max-content;
+    text-align: left;
+    position: absolute;
+    z-index: -1;
     font-weight: normal;
-    width: 500px;
-    transition-duration: 0.8s;
+    transition-duration: 2.0s;
 }
 
+
+#interest-link[data-scroll="in"]{
+    left: 0;
+    right: 0;
+    position: absolute;
+    transition-duration: 2.0s;
+}
+
+#interest-link:hover {
+    text-decoration: underline;
+    left: 0;
+    right: 50%;
+}
+
+
+.post-header{
+    padding-top: 10px;
+    padding-bottom: 15px;
+    opacity: 0;
+    font-size: 28pt;
+}
 
 .text-paragraph {
-    text-align: left;
-    background-color: #666;
-    margin-top: 0;
-    margin-left: 80%;
-    width: 20%;
-    overflow: hidden;
-    transition-duration: 2.5s;
-}
-
-.text-paragraph[data-scroll="in"]{
-    margin-top: 0;
-    margin-left: 40%;
-    width: 60%;
-    transition-duration: 2.5s;
-}
-
-p {
-    margin-top: 0;
-    padding-left: 25px;
+    margin: 0;
+    margin-left: 50px;
+    padding:0;
+    width: 80%;
     padding-top: 10px;
-    margin-right: 0;
-    width: 800px;
+    padding-left: 25px;
+}
+
+
+p{  
+    margin: 0;
+    margin-top: 50px;
+    width: 55%;
+    padding: 10px;
+    font-size: 18pt;
 }

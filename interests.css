@@ -1,3 +1,11 @@
+:root{
+    /* --orange: #DD7230; */
+    --teal: #0095a0;
+    --orange: #DD702C;
+    --grey: #444;
+    --white: #e6e6e6;
+}
+
 body{
     background-color: #212121;
     background-image: url("pictures/Black-background-5.2.jpg");
@@ -13,7 +21,7 @@ h1 {
     margin: 0;
     font-size: 40pt;    
     font-weight: normal;
-    background-color: #0095a0;
+    background-color: var(--teal);
     padding-top: 10px;
     padding-bottom: 15px;
     padding-left: 40px;
@@ -43,8 +51,8 @@ h1[data-scroll="in"]{
 }
 
 .header-1 {
-    background-color: #0095a0;
-    color: #0095a0;
+    background-color: var(--teal);
+    color: var(--teal);
     margin: 0px;
     margin-left: 70%;
     padding: 0;
@@ -61,14 +69,12 @@ h1[data-scroll="in"]{
     width: 432px;
     height: 275px;
     margin-top: 25px;
-    border: 3px solid #444;
 }
 
 #strategy-image{
     width: 500px;
     height: 157px;
     margin-top: 25px;
-    border: 3px solid #444;
 }
 
 
@@ -108,8 +114,8 @@ img{
 }
 
 .header{
-    background-color: #444;
-    color: #444;
+    background-color: var(--orange);
+    color: var(--orange);
     padding: 0;
     padding-top: 10px;
     padding-bottom: 15px;
@@ -123,14 +129,13 @@ img{
 }
 
 h2{
-    background-color: #444;
+    background-color: var(--orange);
     padding-top: 10px;
     padding-bottom: 15px;
     padding-right: 40px;
     margin: 0px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 100px;
     left: 0;
     right: 60%;
     font-size: 28pt;
@@ -155,6 +160,8 @@ h2[data-scroll="in"]{
 }
 
 .post-header{
+    padding-top: 10px;
+    padding-bottom: 15px;
     opacity: 0;
     font-size: 28pt;
 }

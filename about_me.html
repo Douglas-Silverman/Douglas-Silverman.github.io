@@ -47,18 +47,20 @@
 
 
 
-        <div class= "header-1" align= "center">
-            <h1>Douglas Silverman</h1>
+        <div style="width: 200px;"></div>
+        <div class= "header-1">
+            a
         </div>
+        <h1 align= "center">Douglas Silverman</h1>
+        <div style="height: 150px;"> </div>
 
-        <div class= "about-me-info">
             <table align = "center">
                 <tr>
                     <td rowspan= "2" align="right" id= "profile-td">
                         <img src= "pictures/profilePic.png" id = "profile-picture" alt= "profile picture">
                     </td>
                     <td>
-                        <p>
+                        <p class= "text-paragraph">
                             Hello my Name is Douglas Silverman. I am a Senior studying Computer Science and Mathematics 
                             at the University of Massachusetts, Amherst.  
                         </p>
@@ -66,7 +68,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <p>
+                        <p class="text-paragraph">
                             While pursing a double major in Computer Science and Mathematics, I have taken many courses that have made me a 
                             stronger analytical thinker and creative problem solver. Some of these courses include: Algorithms, Discrete Math,
                             Game Theory, Abstract Algebra, Machine Learning and Computer Graphics. As a software developer, I strive to write 
@@ -77,24 +79,23 @@
                     </td>
                 </tr>
             </table>
-            
-            <div class= "about-me-header">
-                <a href= "interests.html">
-                    Some of my other interests are:
-                </a>
+            <div class= "header">
+                a
             </div>
-            <div class= "text-paragraph">
+            <a id= "interest-link">Some of my other interests are:</a>
+            <div class= "post-header" style="width: max-content;">Some of my other interests are:</div>
+
+            <div align= "center">
                 <p>
                     Chess, Poker, Ultimate Fribsee, Videogames
                 </p>
             </div>
-        </div>
 
 
         <script src= "scroll.js"></script>
         <script type= "text/javascript">
             ScrollOut({
-                targets: '.header-1, table, .about-me-header, .text-paragraph'
+                targets: '.header, p, img, #interest-link, .header-1, h1'
             })
         </script>
 
