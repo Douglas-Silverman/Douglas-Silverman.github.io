@@ -43,62 +43,9 @@
             </ul>
         </div>
         
-
-        <!-- <div class= "header-1">
-            <h1>
-                Sports Betting Project
-            </h1>
-        </div>
-
-
-    <div class= "project-header" style= "margin-top: 100px;">
-            <h2>Summary</h2>
-    </div>
-
-    <div class= "text-paragraph">
-        <p>
-            The goal of this project was to compare different classification methods used for Sentiment Analysis. 
-            Sentiment Analysis is a natural language processing process in which a computer determines if a piece of data is Positive, Negative, or Neutral. In our case, the data is tweets from the first 2 months of the COVID-19 Pandemic.
-        </p>
-    </div>
-
-    <div class= "project-header" style= "margin-top: 100px;">
-        <h2>Strategies</h2>
-    </div>
-
-    <div class= "text-paragraph">
-        <p>
-            The goal of this project was to compare different classification methods used for Sentiment Analysis. 
-            Sentiment Analysis is a natural language processing process in which a computer determines if a piece of data is Positive, Negative, or Neutral. In our case, the data is tweets from the first 2 months of the COVID-19 Pandemic.
-        </p>
-    </div>
-
-
-    <div class= "project-header" style= "margin-top: 100px;">
-        <h2>Results</h2>
-    </div>
-
-    <div class= "text-paragraph">
-        <p>
-            The goal of this project was to compare different classification methods used for Sentiment Analysis. 
-            Sentiment Analysis is a natural language processing process in which a computer determines if a piece of data is Positive, Negative, or Neutral. In our case, the data is tweets from the first 2 months of the COVID-19 Pandemic.
-        </p>
-    </div>
-
-
-    <div class= "project-header" style= "margin-top: 100px;">
-        <h2>Conclusion</h2>
-    </div>
-
-    <div class= "text-paragraph">
-        <p>
-            The goal of this project was to compare different classification methods used for Sentiment Analysis. 
-            Sentiment Analysis is a natural language processing process in which a computer determines if a piece of data is Positive, Negative, or Neutral. In our case, the data is tweets from the first 2 months of the COVID-19 Pandemic.
-        </p>
-    </div> -->
         <div style="width: 200px;"></div>
         <div class= "header-1">a</div>
-        <h1 align= "center">Sports Betting Project</h1>
+        <h1 align= "center">Sentiment Analysis of COVID-19 Tweets</h1>
 
         <div style="height: 200px;"> </div>
 
@@ -108,21 +55,54 @@
 
         <div align= "center">
             <p>
+                This was a group project for CS 490A Natural Language Processing during the Fall of 2020. I worked in a group with two other students. Britney Muth and Holly Wagner. 
+                We used GitHub for version control and communicated with discord. For the code we used Python and the scikit-learn machine learning library.
+            </p>
+            <p>
                 The goal of this project was to compare different classification methods used for Sentiment Analysis. 
-                Sentiment Analysis is a natural language processing process in which a computer determines if a piece of data is Positive, Negative, or Neutral. 
-                In our case, the data is tweets from the first 2 months of the COVID-19 Pandemic.
+                Sentiment Analysis is a natural language processing technique in which a computer determines if a piece of data is Positive, Negative, or Neutral. 
+                In our case, the data is tweets from the first 2 months of the COVID-19 Pandemic. The computer needs to decide if each tweet has a positive, negative, or neutral sentiment. 
+                Twitter is a great source for gathering overall public opinion, including public opinion of the pandemic. 
+                The ability to gauge the stance of the public on certain issues relating to the pandemic has several potential applications. 
+                For instance, resource strain, political unrest and noncompliance with social distancing regulations like curfews are all tied to how people respond in times of crisis. 
+                Tuning an accurate model to assess the sentiment of individuals on such topics would be a useful first step in achieving this task.
             </p>
         </div>
 
         <div class= "header">a</div>
-        <h2 align= "center">Strategies</h2>
-        <div class= "post-header" style="width: max-content;">Sports Betting Project</div>
-
+        <h2 align= "center">Dataset</h2>
+        <div class= "post-header" style="width: max-content;">Dataset</div>
+    
         <div align= "center">
             <p>
-                The goal of this project was to compare different classification methods used for Sentiment Analysis. 
-                Sentiment Analysis is a natural language processing process in which a computer determines if a piece of data is Positive, Negative, or Neutral. 
-                In our case, the data is tweets from the first 2 months of the COVID-19 Pandemic.
+                The dataset that we are using was obtained from <a href= "https://www.kaggle.com/datatattle/covid-19-nlp-text-classification" style= "color: #e6e6e6">Kaggle</a>. This dataset contains ~45k entries that are already labelled. 
+                It is also already partitioned into training and test data (~4k entries). 
+                The dataset contains important information such as location, date tweeted, the label (sentiment of tweet) and of course the raw text of each tweet. 
+
+            </p>
+            <p>
+                The dataset however does not come cleaned and so we implemented a clean_data function and a cleaned_csv function for this purpose located in ConvertData.py. 
+                The challenge with cleaning the data was reading non ‘utf-8’ characters from the csv. Because all the data comes from twitter, there are a lot of emojis and other characters that are hard to deal with. 
+                For our data we only wanted to look at the words, so we had a string of “allowed characters” that we care about. 
+                This means we parsed every tweet and deleted every character that was not in [a-z][0-9] and [-@$#%]. This is so we include money amounts, @ing users, hashtags, and percents. 
+                This way we can read the original csv files using latin-1 and then we can exclude any characters that will hinder the tokenization. We then saved the changes into a new csv file.
+            </p>
+        </div>
+
+        <div class= "header">a</div>
+        <h2 align= "center">Classifiers</h2>
+        <div class= "post-header" style="width: max-content;">Classifiers</div>
+    
+        <div align= "center">
+            <p>
+                We decided to use a TF-IDF Vectorizer (Term Frequency-Inverse Document Frequency) to select our feature vectors. 
+                The purpose behind this vectorizer is to lower the weights of terms that occur in many documents (tweets). 
+                For example, the word "the" will be very frequent in many tweets, but the word carries no significant sentiment. 
+            </p>
+            <p>
+                The feature vectors are then used to trained on 4 different classifiers: Naive Bayes, Logistic Regression, Random Forests, and VADER. 
+                Naive Bayes, Logistic Regression, and Random Forests are all classifiersthat learn based on the training-set and then predict on the test set. 
+                However, VADER uses a library of terms that have already been pre-weighted with human input, the weights for the sentence are added up and then the sentiment is determined.
             </p>
         </div>
 
@@ -132,24 +112,36 @@
         <div class= "post-header" style="width: max-content;">Results</div>
 
         <div align= "center">
-            <p>
-                The goal of this project was to compare different classification methods used for Sentiment Analysis. 
-                Sentiment Analysis is a natural language processing process in which a computer determines if a piece of data is Positive, Negative, or Neutral. 
-                In our case, the data is tweets from the first 2 months of the COVID-19 Pandemic.
-            </p>
+            <img src ="pictures/Performance of Classifiers.png" style="width: 640; height: 478; margin-top: 30px;">
+            <table>
+                <tr>
+                    <td></td> <td>Accuracy(F1 score)</td><td>Precison</td><td>Recall</td>
+                </tr>
+                <tr>
+                    <td>Naive Bayes</td> <td>0.6451</td><td>0.6997</td><td>0.5278</td>
+                </tr>
+                <tr>
+                    <td>Logistic Regression</td> <td>0.7915</td><td>0.7842</td><td>0.7498</td>
+                </tr>
+                <tr>
+                    <td>VADER</td> <td>0.9134</td><td>0.9048</td><td>0.9123</td>
+                </tr>
+                <tr>
+                    <td>Random Forests</td> <td>0.6793</td><td>0.6737</td><td>0.6344</td>
+                </tr>
+            </table>
+            
         </div>
 
-        <div class= "header">a</div>
+        <!-- <div class= "header">a</div>
         <h2 align= "center">Conclusion</h2>
         <div class= "post-header" style="width: max-content;">Conclusion</div>
 
         <div align= "center">
             <p>
-                The goal of this project was to compare different classification methods used for Sentiment Analysis. 
-                Sentiment Analysis is a natural language processing process in which a computer determines if a piece of data is Positive, Negative, or Neutral. 
-                In our case, the data is tweets from the first 2 months of the COVID-19 Pandemic.
+                
             </p>
-        </div>
+        </div> -->
 
 
         <div class= "project-link">

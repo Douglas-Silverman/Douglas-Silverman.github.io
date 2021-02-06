@@ -263,3 +263,15 @@ p{
 .project-link > a:hover {
     text-decoration: underline;
 }
+
+table{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: #555;
+}
+
+td{
+    padding: 5px;
+    background-color: #555;
+    border: 1px solid #222;
+}
