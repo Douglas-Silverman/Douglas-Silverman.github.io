@@ -102,7 +102,10 @@
             <p>
                 The feature vectors are then used to trained on 4 different classifiers: Naive Bayes, Logistic Regression, Random Forests, and VADER. 
                 Naive Bayes, Logistic Regression, and Random Forests are all classifiersthat learn based on the training-set and then predict on the test set. 
-                However, VADER uses a library of terms that have already been pre-weighted with human input, the weights for the sentence are added up and then the sentiment is determined.
+                However, VADER is a human made classififer designed for Sentiment Analysis. It uses a dictionary of terms that have already been pre-weighted with human input. 
+                Unlike the other classifiers that compute the P(Sentiment | word) for every word in a tweet, VADER looks up the weight of every term in the tweet and then sums them together. 
+                The final sentiment is determined by the sum of the weights: if the sum > 0 it is positive, if the sum < 0 it is negative, if the sum is between [-0.05, 0.05] it is neutral.
+                
             </p>
         </div>
 
