@@ -44,58 +44,7 @@
         </div>
         
 
-        <!-- <div class= "header-1">
-            <h1>
-                Sports Betting Project
-            </h1>
-        </div>
-
-
-    <div class= "project-header" style= "margin-top: 100px;">
-            <h2>Summary</h2>
-    </div>
-
-    <div class= "text-paragraph">
-        <p>
-            The goal of this project was to compare different classification methods used for Sentiment Analysis. 
-            Sentiment Analysis is a natural language processing process in which a computer determines if a piece of data is Positive, Negative, or Neutral. In our case, the data is tweets from the first 2 months of the COVID-19 Pandemic.
-        </p>
-    </div>
-
-    <div class= "project-header" style= "margin-top: 100px;">
-        <h2>Strategies</h2>
-    </div>
-
-    <div class= "text-paragraph">
-        <p>
-            The goal of this project was to compare different classification methods used for Sentiment Analysis. 
-            Sentiment Analysis is a natural language processing process in which a computer determines if a piece of data is Positive, Negative, or Neutral. In our case, the data is tweets from the first 2 months of the COVID-19 Pandemic.
-        </p>
-    </div>
-
-
-    <div class= "project-header" style= "margin-top: 100px;">
-        <h2>Results</h2>
-    </div>
-
-    <div class= "text-paragraph">
-        <p>
-            The goal of this project was to compare different classification methods used for Sentiment Analysis. 
-            Sentiment Analysis is a natural language processing process in which a computer determines if a piece of data is Positive, Negative, or Neutral. In our case, the data is tweets from the first 2 months of the COVID-19 Pandemic.
-        </p>
-    </div>
-
-
-    <div class= "project-header" style= "margin-top: 100px;">
-        <h2>Conclusion</h2>
-    </div>
-
-    <div class= "text-paragraph">
-        <p>
-            The goal of this project was to compare different classification methods used for Sentiment Analysis. 
-            Sentiment Analysis is a natural language processing process in which a computer determines if a piece of data is Positive, Negative, or Neutral. In our case, the data is tweets from the first 2 months of the COVID-19 Pandemic.
-        </p>
-    </div> -->
+       
         <div style="width: 200px;"></div>
         <div class= "header-1">a</div>
         <h1 align= "center">Sports Betting Project</h1>
@@ -108,21 +57,55 @@
 
         <div align= "center">
             <p>
-                The goal of this project was to compare different classification methods used for Sentiment Analysis. 
-                Sentiment Analysis is a natural language processing process in which a computer determines if a piece of data is Positive, Negative, or Neutral. 
-                In our case, the data is tweets from the first 2 months of the COVID-19 Pandemic.
+                This was a group project for Math 456 Mathematical Modeling during the Spring of 2020. I worked in a group with two other students: Calvin Lok and Jason Le. 
+                Calvin and Jason are both Math majors at Umass and helped research and develop some of the algorithms. All the code was written by me. I used Python 3.7, Pandas, and mathplotlib. 
+                Because I put so much work into this project, I decided to continue working on it after we handed in the final report. I polished some of the functions and attempted to merge the two best performing strategies together.
+            </p>
+            <p>
+                People love to gamble. The recent popularity of websites like DraftKings and Fanduel are a way for Americans to feel the thrill of gambling. 
+                This project was designed to test out some of the strategies amateur gamblers use when placing bets for an entire sports season. 
             </p>
         </div>
 
+
         <div class= "header">a</div>
-        <h2 align= "center">Strategies</h2>
-        <div class= "post-header" style="width: max-content;">Sports Betting Project</div>
+        <h2 align= "center">Project Design</h2>
+        <div class= "post-header" style="width: max-content;">Project Design</div>
 
         <div align= "center">
             <p>
-                The goal of this project was to compare different classification methods used for Sentiment Analysis. 
-                Sentiment Analysis is a natural language processing process in which a computer determines if a piece of data is Positive, Negative, or Neutral. 
-                In our case, the data is tweets from the first 2 months of the COVID-19 Pandemic.
+                The design of the project is to model how an amateur gambler starting with $1000 would use the money. A few rules will be set. First, a wager must be placed on every game that is played over the course of the season. 
+                Second, each wager will be simple: "Will Team A or Team B win this game?" Third, the model must use the same betting strategy for the entire season. Each strategy will be tested over the course of 3 years and 3 different sports. 
+                Over the course of each year, the profit will be recorded and graphed. At the end of each year, the model will start again with $1000 and continue the strategy.
+            </p>
+            <p>
+                Our Datasets consist of data for the past 3 seasons of MLB, NFL, and  NBA professional play. Each sport varies in the length of the game, the length of the season, and the likelihood for an upset. 
+                Each game includes: the date of the game, the 2 teams playing, the final score, and the American odds for each team winning. Bookmakers in Las Vegas put out payouts information in the form of American odds prior to every sports contest.
+            </p>
+            <p>Datasets obtained from: <a href= "https://www.sportsbookreviewsonline.com/scoresoddsarchives/scoresoddsarchives.htm" style= "color: #e6e6e6" target="_blank">sportsbookreviewsonline.com</a></p>
+        </div>
+
+
+        <div class= "header">a</div>
+        <h2 align= "center">Strategies</h2>
+        <div class= "post-header" style="width: max-content;">Strategies</div>
+
+        <div align= "center">
+            <p>
+                The first two strategies are based on the gambler's fallacy. This is the belief that during a losing streak, the probability of a win increases. This is obviously false since each wager is an independent event. 
+                However, the Martingale and Oscar's Grind strategy are based on this idea. These two strategies increase the bet size after consecutive loses. The Martingale strategy is tuned so that it will take roughly 10 lost bets in a row to lose $1000. 
+                Oscar's Grind will take upwards of 20 lost bets in a row to lose the $1000. Note that these strategies rely on placing all bets on the favored team in every match.
+            </p>
+            <p>
+                The next strategy is called the Kelley Criterion. The Kelly Criterion is a simple formula to assist gamblers in deciding how much money each bet should receive. Each bet is a fraction of the current amount of assets, scaling after each bet.
+            </p>
+            <p>
+                The last strategy is a Poisson Distribution Prediction based model. This model attempts to predict the winner of every game by looking at the average number of points scored by both teams. 
+                This model sums together all the probabilities of Team A beating Team B. The model sums Team A winning with a score of: 1-0, 2-0, 2-1, 3-0, 3-1, ... (literally every possible score). If this number is greater than .5 then a bet size of $5 is placed on Team A. 
+                This model predicts the winner of every game in the season using this algorithm. 
+            </p>
+            <p>
+                I tweaked the Poisson model to incorporate the Martingale bet sizing strategy. This stategy now tries to find the winner of the game and places the correct bet size to make up losses.
             </p>
         </div>
 
@@ -131,12 +114,18 @@
         <h2 align= "center">Results</h2>
         <div class= "post-header" style="width: max-content;">Results</div>
 
-        <div align= "center">
-            <p>
-                The goal of this project was to compare different classification methods used for Sentiment Analysis. 
-                Sentiment Analysis is a natural language processing process in which a computer determines if a piece of data is Positive, Negative, or Neutral. 
-                In our case, the data is tweets from the first 2 months of the COVID-19 Pandemic.
-            </p>
+        <div align= "center" style="margin-bottom: 30px;">
+            <h3 style="font-weight: normal; font-size: 24pt;">Martingale</h3>
+            <img src= "pictures/betting_results/MLB Martingale.PNG" style="width: 400px; height: 280px;"> <img src= "pictures/betting_results/NBA Martingale.PNG" style="width: 400px; height: 280px;"> <img src= "pictures/betting_results/NFL Martingale.PNG" style="width: 400px; height: 280px;">
+            
+            <h3 style="font-weight: normal; font-size: 24pt;">Oscar's Grind</h3>
+            <img src= "pictures/betting_results/MLB Oscar's Grind.PNG" style="width: 400px; height: 280px;"> <img src= "pictures/betting_results/NBA Oscar's Grind.PNG" style="width: 400px; height: 280px;"> <img src= "pictures/betting_results/NFL Oscar's Grind.PNG" style="width: 400px; height: 280px;">
+
+            <h3 style="font-weight: normal; font-size: 24pt;">Poisson</h3>
+            <img src= "pictures/betting_results/MLB Poisson.PNG" style="width: 400px; height: 280px;"> <img src= "pictures/betting_results/NBA Poisson.PNG" style="width: 400px; height: 280px;"> <img src= "pictures/betting_results/NFL Poisson.PNG" style="width: 400px; height: 280px;">
+        
+            <h3 style="font-weight: normal; font-size: 24pt;">Poisson Martingale</h3>
+            <img src= "pictures/betting_results/MLB Poisson Martingale.PNG" style="width: 400px; height: 280px;"> <img src= "pictures/betting_results/NBA Poisson Martingale.PNG" style="width: 400px; height: 280px;"> <img src= "pictures/betting_results/NFL Poisson Martingale.PNG" style="width: 400px; height: 280px;">
         </div>
 
         <div class= "header">a</div>
@@ -145,9 +134,12 @@
 
         <div align= "center">
             <p>
-                The goal of this project was to compare different classification methods used for Sentiment Analysis. 
-                Sentiment Analysis is a natural language processing process in which a computer determines if a piece of data is Positive, Negative, or Neutral. 
-                In our case, the data is tweets from the first 2 months of the COVID-19 Pandemic.
+                The 2 Traditional betting models performed as intented, they both did not lose a significant amount of money. The Martingale however, performed very well and increased profits the most when used on NBA games. 
+                The Kelley Criterion strategy was a huge failure. This might be due to such a large amount of the initial capitol being used on each bet. After a few lost bets, there is almost no money left out of the $1000. The Poisson based model performed very well and was the most profitbale of the original 4 strategies.
+                The Poisson Martingale model was a combination of the 2 best performing strategies. This model performed the best and had an almost linear profit trend.</p>
+            </p>
+            <p>
+                Please follow the links below to learn more. 
             </p>
         </div>
 

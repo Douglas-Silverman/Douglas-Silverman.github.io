@@ -75,7 +75,7 @@
     
         <div align= "center">
             <p>
-                The dataset that we are using was obtained from <a href= "https://www.kaggle.com/datatattle/covid-19-nlp-text-classification" style= "color: #e6e6e6">Kaggle</a>. This dataset contains ~45k entries that are already labelled. 
+                The dataset that we are using was obtained from <a href= "https://www.kaggle.com/datatattle/covid-19-nlp-text-classification" style= "color: #e6e6e6" target="_blank">Kaggle</a>. This dataset contains ~45k entries that are already labelled. 
                 It is also already partitioned into training and test data (~4k entries). 
                 The dataset contains important information such as location, date tweeted, the label (sentiment of tweet) and of course the raw text of each tweet. 
 
@@ -115,33 +115,74 @@
             <img src ="pictures/Performance of Classifiers.png" style="width: 640; height: 478; margin-top: 30px;">
             <table>
                 <tr>
-                    <td></td> <td>Accuracy(F1 score)</td><td>Precison</td><td>Recall</td>
+                    <td style="background-color: #555;"></td> <td style="background-color: #555;">Accuracy(F1 score)</td><td style="background-color: #555;">Precison</td><td style="background-color: #555;">Recall</td>
                 </tr>
                 <tr>
-                    <td>Naive Bayes</td> <td>0.6451</td><td>0.6997</td><td>0.5278</td>
+                    <td style="background-color: #555;">Naive Bayes</td> <td>0.6451</td><td>0.6997</td><td>0.5278</td>
                 </tr>
                 <tr>
-                    <td>Logistic Regression</td> <td>0.7915</td><td>0.7842</td><td>0.7498</td>
+                    <td style="background-color: #555;">Logistic Regression</td> <td>0.7915</td><td>0.7842</td><td>0.7498</td>
                 </tr>
                 <tr>
-                    <td>VADER</td> <td>0.9134</td><td>0.9048</td><td>0.9123</td>
+                    <td style="background-color: #555;">VADER</td> <td>0.9134</td><td>0.9048</td><td>0.9123</td>
                 </tr>
                 <tr>
-                    <td>Random Forests</td> <td>0.6793</td><td>0.6737</td><td>0.6344</td>
+                    <td style="background-color: #555;">Random Forests</td> <td>0.6793</td><td>0.6737</td><td>0.6344</td>
                 </tr>
             </table>
             
+            <table>
+                <tr>
+                    <td style="background-color: #555;"></td> <td colspan="4" style="text-align: center; background-color: #555;">Top TF-IDF Scores</td>
+                </tr>
+                <tr>
+                    <td style="background-color: #555;">Rank</td> <td style="background-color: #555;">Positive</td> <td style="background-color: #555;">Negative</td> <td style="background-color: #555;">Neutral</td>
+                </tr>
+                <tr>
+                    <td style="background-color: #555;">1</td> <td>coronavirus</td> <td>coronavirus</td> <td>coronavirus</td>
+                </tr>
+                <tr>
+                    <td style="background-color: #555;">2</td> <td>19</td> <td>19</td> <td>19</td>
+                </tr>
+                <tr>
+                    <td style="background-color: #555;">3</td> <td>covid</td> <td>covid</td> <td>covid</td>
+                </tr>
+                <tr>
+                    <td style="background-color: #555;">4</td> <td>covid19</td> <td>food</td> <td>covid19</td>
+                </tr>
+                <tr>
+                    <td style="background-color: #555;">5</td> <td>store</td> <td>prices</td> <td>store</td>
+                </tr>
+                <tr>
+                    <td style="background-color: #555;">6</td> <td>grocery</td> <td>covid19</td> <td>supermarket</td>
+                </tr>
+                <tr>
+                    <td style="background-color: #555;">7</td> <td>supermarket</td> <td>supermarket</td> <td>grocery</td>
+                </tr>
+                <tr>
+                    <td style="background-color: #555;">8</td> <td>food</td> <td>people</td> <td>prices</td>
+                </tr>
+                <tr>
+                    <td style="background-color: #555;">9</td> <td>prices</td> <td>store</td> <td>panic</td>
+                </tr>
+                <tr>
+                    <td style="background-color: #555;">10</td> <td>amp</td> <td>panic</td> <td>shopping</td>
+                </tr>
+            </table>
         </div>
 
-        <!-- <div class= "header">a</div>
+        <div class= "header">a</div>
         <h2 align= "center">Conclusion</h2>
         <div class= "post-header" style="width: max-content;">Conclusion</div>
 
         <div align= "center">
             <p>
-                
+                The results of the project show that VADER performed the best. This is expected since VADER is a dictionary-based classifier that was made for Sentiment Analysis. 
+                Additionally, Logistic Regression performed higher than expected. We can see some insight into what words had the most value to the American people by looking at the top 10 highest scoring terms. 
+                This table shows the highest valued words according to their TF-IDF score. To our surprise, words like food, supermarket, and prices were highly valued in determining sentiment. 
+                This shows that one of the most important concerns for the people, was where is there food coming from, and how much does it cost?
             </p>
-        </div> -->
+        </div>
 
 
         <div class= "project-link">
