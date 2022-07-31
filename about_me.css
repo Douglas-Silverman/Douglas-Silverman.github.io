@@ -86,8 +86,8 @@ td{
 
 
 #profile-picture {
-    height: 375px;
-    width: 375px;
+    width: 360px;
+    height: 540px;
     vertical-align: top;
 }
 
@@ -167,7 +167,7 @@ td{
 
 p{  
     margin: 0;
-    margin-top: 50px;
+    margin-top: 40px;
     width: 55%;
     padding: 10px;
     font-size: 18pt;
